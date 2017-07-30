@@ -1,0 +1,64 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Hacking the Renesas S5D9 IoT Fast Prototyping Kit\n\n\nHacking Paths\n\n\n\n\nData Monitoring (Bug Labs default system image)\n\n\nData Intelligence (Medium One binaries and cloud-based workflows)\n\n\nRenesas Synergy (Professional C/C++ development system)\n\n\n\n\nBefore You Hack\n\n\n\n\ntechnical requirements",
+            "title": "Home"
+        },
+        {
+            "location": "/#hacking-the-renesas-s5d9-iot-fast-prototyping-kit",
+            "text": "",
+            "title": "Hacking the Renesas S5D9 IoT Fast Prototyping Kit"
+        },
+        {
+            "location": "/#hacking-paths",
+            "text": "Data Monitoring (Bug Labs default system image)  Data Intelligence (Medium One binaries and cloud-based workflows)  Renesas Synergy (Professional C/C++ development system)",
+            "title": "Hacking Paths"
+        },
+        {
+            "location": "/#before-you-hack",
+            "text": "technical requirements",
+            "title": "Before You Hack"
+        },
+        {
+            "location": "/requirements/",
+            "text": "Hacking requirements\n\n\nOS\n\n\nAs of 7/29/2017, the board cannot mount on a Mac.  You need Windows 7 or 10\nto really use the board and tools. You can mount the board on Linux, but you\nwill not be able to use Synergy. \n\n\nData Monitoring and Data Intelligence\n\n\n\n\nEthernet with Internet access\n\n\nUSB cable to power the board (you can power it from your laptop)\n\n\nweb browser to display dashboard \n\n\n\n\nSynergy\n\n\n\n\nSynergy Software Package (SSP)\n\n\ne2 Studio ISDE\n\n\n\n\nRestoring Factory Image\n\n\n\n\nS5 LCM Bootloader Factory Image\n\n\nUSB cable\n\n\njumper and wires\n\n\n\n\nBuilding new binary\n\n\n\n\nSynergy\n\n\nUSB cable\n\n\n\n\nReplacing Bootloader\n\n\n\n\nJ-Link Software\n pack that contains J-Flash Lite\n\n\nSEGGER J-Link JTAG debugger\n\n\n\n\nThe unit below came with the S3A7 IoT Fast Prototyping Kit. I heard that it normally \ncosts $30 separately. The unit below works.\n\n\n\n\nI went online and saw similar units on sale on eBay for $11 to $17. I do not know if \nany of the units on eBay work. If you have a unit that works, please post information.",
+            "title": "Requirements"
+        },
+        {
+            "location": "/requirements/#hacking-requirements",
+            "text": "",
+            "title": "Hacking requirements"
+        },
+        {
+            "location": "/requirements/#os",
+            "text": "As of 7/29/2017, the board cannot mount on a Mac.  You need Windows 7 or 10\nto really use the board and tools. You can mount the board on Linux, but you\nwill not be able to use Synergy.",
+            "title": "OS"
+        },
+        {
+            "location": "/requirements/#data-monitoring-and-data-intelligence",
+            "text": "Ethernet with Internet access  USB cable to power the board (you can power it from your laptop)  web browser to display dashboard",
+            "title": "Data Monitoring and Data Intelligence"
+        },
+        {
+            "location": "/requirements/#synergy",
+            "text": "Synergy Software Package (SSP)  e2 Studio ISDE",
+            "title": "Synergy"
+        },
+        {
+            "location": "/requirements/#restoring-factory-image",
+            "text": "S5 LCM Bootloader Factory Image  USB cable  jumper and wires",
+            "title": "Restoring Factory Image"
+        },
+        {
+            "location": "/requirements/#building-new-binary",
+            "text": "Synergy  USB cable",
+            "title": "Building new binary"
+        },
+        {
+            "location": "/requirements/#replacing-bootloader",
+            "text": "J-Link Software  pack that contains J-Flash Lite  SEGGER J-Link JTAG debugger   The unit below came with the S3A7 IoT Fast Prototyping Kit. I heard that it normally \ncosts $30 separately. The unit below works.   I went online and saw similar units on sale on eBay for $11 to $17. I do not know if \nany of the units on eBay work. If you have a unit that works, please post information.",
+            "title": "Replacing Bootloader"
+        }
+    ]
+}
