@@ -1,4 +1,5 @@
 site_name: S5D9 IoT Hacking
+theme_dir: theme/material
 theme: 'material'
 google_analytics: ['UA-86439301-1', 'auto']
 repo_url: 'https://github.com/codetricity/s5d9-hacking/'
