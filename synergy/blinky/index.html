@@ -141,10 +141,58 @@
       
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Overview
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Overview
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="../.." title="Home" class="md-nav__link">
-      Home
+    <a href="../.." title="Board and Dev Tools" class="md-nav__link">
+      Board and Dev Tools
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hackingpaths/" title="Hacking Paths" class="md-nav__link">
+      Hacking Paths
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../requirements/" title="Requirements" class="md-nav__link">
+      Requirements
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -213,6 +261,46 @@
   <a href="#building-a-custom-blinky" title="Building a Custom Blinky" class="md-nav__link">
     Building a Custom Blinky
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e2-studio" title="e2 Studio" class="md-nav__link">
+    e2 Studio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-j-flash-lite" title="Using J-Flash Lite" class="md-nav__link">
+    Using J-Flash Lite
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connect-debugger-board" title="Connect debugger board" class="md-nav__link">
+    Connect debugger board
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-j-flash-lite" title="Configure J-Flash Lite" class="md-nav__link">
+    Configure J-Flash Lite
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -301,6 +389,46 @@
     Building a Custom Blinky
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e2-studio" title="e2 Studio" class="md-nav__link">
+    e2 Studio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-j-flash-lite" title="Using J-Flash Lite" class="md-nav__link">
+    Using J-Flash Lite
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connect-debugger-board" title="Connect debugger board" class="md-nav__link">
+    Connect debugger board
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-j-flash-lite" title="Configure J-Flash Lite" class="md-nav__link">
+    Configure J-Flash Lite
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -327,6 +455,69 @@
 with a new custom image that makes the onboard LEDs blink. Before you go any 
 further, verify that you can restore the factory image of your board. Read the
 overview of <a href="../custom/">creating a custom board image</a>.</p>
+<h3 id="e2-studio">e2 Studio</h3>
+<p>Start e2 Studio.</p>
+<p>Create a new workspace.</p>
+<p><img alt="" src="../img/e2-studio-start.png" /></p>
+<p>Go to the Workbench.</p>
+<p><img alt="" src="../img/workbench.png" /></p>
+<p>Go to the Project Explorer view.</p>
+<p><img alt="" src="../img/workbench-default.png" /></p>
+<p>File -&gt; New - Synergy C Project</p>
+<p><img alt="" src="../img/new-project.png" /></p>
+<p>Specify a project name.</p>
+<p><img alt="" src="../img/project-name.png" /></p>
+<p>Configure your Synergy Project</p>
+<p><img alt="" src="../img/synergy-config.png" /></p>
+<p><strong>Important:</strong> Your board must be S5D9_IOT_ENABLER. If this option does not come up, you
+will need to install the Board Support Package. See the previous section on 
+<a href="../custom/#software-configuration">Software Configuration</a></p>
+<p>Select Blinky as the Project Template.</p>
+<p><img alt="" src="../img/blinky-code-gen.png" /></p>
+<p>Enter the Synergy Configuration perspective and look for the BSP tab.</p>
+<p><img alt="" src="../img/synergy-config-screen.png" /></p>
+<p>In the BSP tab, make sure you have the proper Board and Device.</p>
+<p><img alt="" src="../img/bsp-device.png" /></p>
+<p>Select Build.</p>
+<p><img alt="" src="../img/blinky-build.png" /></p>
+<p>The <code>.srec</code> file will be placed in the <code>Debug</code> folder.</p>
+<p><img alt="" src="../img/blinky-src.png" /></p>
+<p>If your board is connected to the J-Link debugger, can now press Debug and the binary will move over to your board. </p>
+<p>You can also use a separate tool called, J-Flash Lite. To make the process easier to learn as a 
+step by step process, I'm going to
+break the process into two steps, build and then flash. I'm going to show you how to use J-Flash Lite to
+to move the binary over. When you're actively building and debugging, you can use e2 Studio to manage
+the process automatically.</p>
+<h3 id="using-j-flash-lite">Using J-Flash Lite</h3>
+<h4 id="connect-debugger-board">Connect debugger board</h4>
+<ul>
+<li>Connect debugger board to Windows workstation with USB cable</li>
+<li>Connect debugger board to Renesas S5D9 board with ribbon cable and JTAG connector</li>
+<li>Connect Renesas S5D9 board to USB power source (such as your computer's USB port)</li>
+</ul>
+<p><img alt="" src="../img/jlink.jpg" /></p>
+<h4 id="configure-j-flash-lite">Configure J-Flash Lite</h4>
+<p>Open J-Flash Lite. If you do not have J-Flash Lite installed, download the <a href="https://www.segger.com/downloads/jlink/">J-Link Software</a> pack from SEGGER.</p>
+<p><img alt="" src="../img/j-flash-lite.png" /></p>
+<p>When J-Flash starts, you'll need to specific the Device and Interface. You may also need to
+update your driver.</p>
+<p><img alt="" src="../img/j-flash-start.png" /></p>
+<p>Plug in the SEGGER debugger board into your Windows computer and it will automatically
+install the J-Link driver.</p>
+<p><img alt="" src="../img/j-link-driver.png" /></p>
+<p>Update the driver (optional).</p>
+<p><img alt="" src="../img/j-link-update.png" /></p>
+<p>The specific Renesas MCU used in the S5D9 IoT Fast Prototyping Kit is:</p>
+<pre><code>R7FS5D97E2A01CLK
+</code></pre>
+<p>Select Renesas, R7FS5D97E.</p>
+<p><img alt="" src="../img/j-flash-renesas.png" /></p>
+<p>Select JTAG for Interface.</p>
+<p><img alt="" src="../img/jtag.png" /></p>
+<p>Select the <code>.srec</code> binary to upload.</p>
+<p><img alt="" src="../img/jflash-srec.png" /></p>
+<p>Flash the board. See the blink. The default blinky flashes all three LEDs.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y8aBY0ZYQAc" frameborder="0" allowfullscreen></iframe>
                 
                   
                 

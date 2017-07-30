@@ -76,8 +76,12 @@
           
             
               
+                <span class="md-header-nav__parent">
+                  Overview
+                </span>
+              
             
-            Home
+            Board and Dev Tools
           
         </span>
       </div>
@@ -139,6 +143,27 @@
   
 
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      Overview
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Overview
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
@@ -147,11 +172,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Home
+        Board and Dev Tools
       </label>
     
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
-      Home
+    <a href="." title="Board and Dev Tools" class="md-nav__link md-nav__link--active">
+      Board and Dev Tools
     </a>
     
       
@@ -171,26 +196,41 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#hacking-paths" title="Hacking Paths" class="md-nav__link">
-    Hacking Paths
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#before-you-hack" title="Before You Hack" class="md-nav__link">
-    Before You Hack
-  </a>
-  
-</li>
-      
       
       
     </ul>
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="hackingpaths/" title="Hacking Paths" class="md-nav__link">
+      Hacking Paths
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="requirements/" title="Requirements" class="md-nav__link">
+      Requirements
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -317,20 +357,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#hacking-paths" title="Hacking Paths" class="md-nav__link">
-    Hacking Paths
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#before-you-hack" title="Before You Hack" class="md-nav__link">
-    Before You Hack
-  </a>
-  
-</li>
-      
       
       
     </ul>
@@ -382,24 +408,6 @@ great way to learn about cloud-based IoT systems like Renesas Data Monitoring (B
 Renesas Data Intelligence (Medium One).</p>
 <p>In addition to all the free access to software and tools, the design files for the board are 
 open sourced. You can use the board files to develop your own IoT device. </p>
-<h2 id="hacking-paths">Hacking Paths</h2>
-<p>With so many options, getting started hacking the board can be bewildering. I recommend
-you follow the sequence below in the order presented. Go to the free site
-<a href="http://learn.iotcommunity.io/">IoTcommunity.io</a> for tutorials that will get you started.</p>
-<ol>
-<li>Data Monitoring (Bug Labs default system image)</li>
-<li>Data Intelligence (Medium One binaries and cloud-based workflows)</li>
-<li>Renesas Synergy (Professional C/C++ development system)<ul>
-<li>Use factory default bootloader (<code>Put binary here</code> folder)</li>
-<li>Replacing factory image with your custom image</li>
-</ul>
-</li>
-<li><a href="design/files/">Designing your own board</a></li>
-</ol>
-<h2 id="before-you-hack">Before You Hack</h2>
-<ul>
-<li><a href="requirements.md">technical requirements</a></li>
-</ul>
                 
                   
                 
@@ -419,13 +427,13 @@ you follow the sequence below in the order presented. Go to the free site
       <nav class="md-footer-nav__inner md-grid">
         
         
-          <a href="synergy/custom/" title="Image Dev Tools" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="hackingpaths/" title="Hacking Paths" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Image Dev Tools
+                Hacking Paths
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
