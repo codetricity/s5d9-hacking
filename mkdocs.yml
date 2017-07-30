@@ -1,3 +1,15 @@
 site_name: S5D9 IoT Hacking
 theme: 'material'
 google_analytics: ['UA-86439301-1', 'auto']
+edit_uri: edit/master/docs/
+site_description: 'Community-generated documentation to hack the Renesas S5D9 IoT Fast Prototyping Kit'
+site_author: 'Craig Oda and the learn.iotcommunity.io team'
+
+pages: 
+- Home: 'index.md'
+- Develop Your Own Image: 
+    - 'Image Dev Tools': 'synergy/custom.md'
+    - 'Creating a new Blinky image': 'synergy/blinky.md'
+- Design Your Own Board:
+    - 'Download design files': 'design/files.md'
+    - 'Manufacturing and assembly': 'design/manufacturing.md'
