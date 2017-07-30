@@ -139,6 +139,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         Home
@@ -152,34 +154,23 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hacking-the-renesas-s5d9-iot-fast-prototyping-kit" title="Hacking the Renesas S5D9 IoT Fast Prototyping Kit" class="md-nav__link">
-    Hacking the Renesas S5D9 IoT Fast Prototyping Kit
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#hacking-paths" title="Hacking Paths" class="md-nav__link">
     Hacking Paths
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#before-you-hack" title="Before You Hack" class="md-nav__link">
     Before You Hack
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -204,6 +195,54 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Design
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Design
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="design/files/" title="Files" class="md-nav__link">
+      Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="design/manufacturing/" title="Manufacturing" class="md-nav__link">
+      Manufacturing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -218,34 +257,23 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hacking-the-renesas-s5d9-iot-fast-prototyping-kit" title="Hacking the Renesas S5D9 IoT Fast Prototyping Kit" class="md-nav__link">
-    Hacking the Renesas S5D9 IoT Fast Prototyping Kit
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#hacking-paths" title="Hacking Paths" class="md-nav__link">
     Hacking Paths
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#before-you-hack" title="Before You Hack" class="md-nav__link">
     Before You Hack
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -264,16 +292,20 @@
               
                 
                 
-                  <h1>Home</h1>
-                
-                <h2 id="hacking-the-renesas-s5d9-iot-fast-prototyping-kit">Hacking the Renesas S5D9 IoT Fast Prototyping Kit</h2>
-<h3 id="hacking-paths">Hacking Paths</h3>
-<ul>
+                <h1 id="hacking-the-renesas-s5d9-iot-fast-prototyping-kit">Hacking the Renesas S5D9 IoT Fast Prototyping Kit</h1>
+<p><img alt="" src="./img/board/board-pmod.jpg" /></p>
+<h2 id="hacking-paths">Hacking Paths</h2>
+<ol>
 <li>Data Monitoring (Bug Labs default system image)</li>
 <li>Data Intelligence (Medium One binaries and cloud-based workflows)</li>
-<li>Renesas Synergy (Professional C/C++ development system)</li>
+<li>Renesas Synergy (Professional C/C++ development system)<ul>
+<li>Use factory default bootloader ('Put binary here' folder)</li>
+<li>Replacing factory image with your own image</li>
 </ul>
-<h3 id="before-you-hack">Before You Hack</h3>
+</li>
+<li><a href="design/files/">Designing your own board</a></li>
+</ol>
+<h2 id="before-you-hack">Before You Hack</h2>
 <ul>
 <li><a href="requirements/">technical requirements</a></li>
 </ul>

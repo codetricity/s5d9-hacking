@@ -10,20 +10,20 @@
       
       
       
-        <link rel="shortcut icon" href="/assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.5">
     
     
       
-        <title>S5D9 IoT Hacking</title>
+        <title>Manufacturing - S5D9 IoT Hacking</title>
       
     
     
-      <script src="/assets/javascripts/modernizr-1df76c4e58.js"></script>
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/application-769c285a91.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
       
     
     
@@ -60,7 +60,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="/" title="S5D9 IoT Hacking" class="md-icon md-icon--home md-header-nav__button">
+          <a href="../.." title="S5D9 IoT Hacking" class="md-icon md-icon--home md-header-nav__button">
           </a>
         
       </div>
@@ -71,7 +71,13 @@
         <span class="md-flex__ellipsis md-header-nav__title">
           
             
-            S5D9 IoT Hacking
+              
+                <span class="md-header-nav__parent">
+                  Design
+                </span>
+              
+            
+            Manufacturing
           
         </span>
       </div>
@@ -132,7 +138,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/" title="Home" class="md-nav__link">
+    <a href="../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -144,7 +150,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/requirements/" title="Requirements" class="md-nav__link">
+    <a href="../../requirements/" title="Requirements" class="md-nav__link">
       Requirements
     </a>
   </li>
@@ -154,10 +160,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Design
@@ -175,7 +183,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/design/files/" title="Files" class="md-nav__link">
+    <a href="../files/" title="Files" class="md-nav__link">
       Files
     </a>
   </li>
@@ -185,11 +193,43 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="/design/manufacturing/" title="Manufacturing" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Manufacturing
+      </label>
+    
+    <a href="./" title="Manufacturing" class="md-nav__link md-nav__link--active">
       Manufacturing
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#manufacturing-your-own-pcb-boards" title="Manufacturing Your Own PCB Boards" class="md-nav__link">
+    Manufacturing Your Own PCB Boards
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -205,12 +245,58 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#manufacturing-your-own-pcb-boards" title="Manufacturing Your Own PCB Boards" class="md-nav__link">
+    Manufacturing Your Own PCB Boards
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
-
+                
+                
+                  <h1>Manufacturing</h1>
+                
+                <h2 id="manufacturing-your-own-pcb-boards">Manufacturing Your Own PCB Boards</h2>
+<p>Recommend <a href="https://www.seeedstudio.com/fusion.html">Seeed Studio Fusion</a>. You can 
+use any manufacturer. Renesas used Seeed Studio for the S5D9 IoT Fast Prototyping Kit.</p>
+<p>Read <a href="http://statics3.seeedstudio.com/fusion/ebook/V1.1%20Final%20DFM.pdf">PCB Design for Manufacture</a> by seeedstudio.</p>
+<p>Submit your modified Gerber files to the <a href="https://www.seeedstudio.com/fusion_pcb.html">Seeed PCB/PCBA site</a></p>
+<p>Community member @Serdnleb reported this on a generic PCB order, NOT the S5D9 order. Your costs per board
+will likely be higher as you'll probably use more than 2 layers. This example is just to give you a feel 
+for lowest costs based on a real-world community experience.</p>
+<blockquote>
+<p>I've used Seeed Fusion service a few times in the past. They are especially good if you need several of the same board as they send 10 copies at very low price. The boards are very nice quality. I live in the UK and got the boards about a week after placing my order. If you need fast shipping you can go with DHL but is a bit more expensive.</p>
+<p>My latest order from Seeed, to manufacture 10 pieces of 2−layer white PCB boards cost $4.9USD in total. This will cost $27USD in total to manufacture and ship to UK through DHL within 11 days.</p>
+<p>June, 2017 @Serdnleb</p>
+</blockquote>
+                
+                  
+                
+              
               
                 
               
@@ -221,6 +307,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../files/" title="Files" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Files
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -241,10 +348,10 @@
       
     </div>
     
-      <script src="/assets/javascripts/application-07b0fbb49b.js"></script>
+      <script src="../../assets/javascripts/application-07b0fbb49b.js"></script>
       
       
-      <script>app.initialize({url:{base:""}})</script>
+      <script>app.initialize({url:{base:"../.."}})</script>
       
     
     

@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Hacking the Renesas S5D9 IoT Fast Prototyping Kit\n\n\nHacking Paths\n\n\n\n\nData Monitoring (Bug Labs default system image)\n\n\nData Intelligence (Medium One binaries and cloud-based workflows)\n\n\nRenesas Synergy (Professional C/C++ development system)\n\n\n\n\nBefore You Hack\n\n\n\n\ntechnical requirements",
+            "text": "Hacking the Renesas S5D9 IoT Fast Prototyping Kit\n\n\n\n\nHacking Paths\n\n\n\n\nData Monitoring (Bug Labs default system image)\n\n\nData Intelligence (Medium One binaries and cloud-based workflows)\n\n\nRenesas Synergy (Professional C/C++ development system)\n\n\nUse factory default bootloader ('Put binary here' folder)\n\n\nReplacing factory image with your own image\n\n\n\n\n\n\nDesigning your own board\n\n\n\n\nBefore You Hack\n\n\n\n\ntechnical requirements",
             "title": "Home"
         },
         {
@@ -12,7 +12,7 @@
         },
         {
             "location": "/#hacking-paths",
-            "text": "Data Monitoring (Bug Labs default system image)  Data Intelligence (Medium One binaries and cloud-based workflows)  Renesas Synergy (Professional C/C++ development system)",
+            "text": "Data Monitoring (Bug Labs default system image)  Data Intelligence (Medium One binaries and cloud-based workflows)  Renesas Synergy (Professional C/C++ development system)  Use factory default bootloader ('Put binary here' folder)  Replacing factory image with your own image    Designing your own board",
             "title": "Hacking Paths"
         },
         {
@@ -22,7 +22,7 @@
         },
         {
             "location": "/requirements/",
-            "text": "Hacking requirements\n\n\nOS\n\n\nAs of 7/29/2017, the board cannot mount on a Mac.  You need Windows 7 or 10\nto really use the board and tools. You can mount the board on Linux, but you\nwill not be able to use Synergy. \n\n\nData Monitoring and Data Intelligence\n\n\n\n\nEthernet with Internet access\n\n\nUSB cable to power the board (you can power it from your laptop)\n\n\nweb browser to display dashboard \n\n\n\n\nSynergy\n\n\n\n\nSynergy Software Package (SSP)\n\n\ne2 Studio ISDE\n\n\n\n\nRestoring Factory Image\n\n\n\n\nS5 LCM Bootloader Factory Image\n\n\nUSB cable\n\n\njumper and wires\n\n\n\n\nBuilding new binary\n\n\n\n\nSynergy\n\n\nUSB cable\n\n\n\n\nReplacing Bootloader\n\n\n\n\nJ-Link Software\n pack that contains J-Flash Lite\n\n\nSEGGER J-Link JTAG debugger\n\n\n\n\nThe unit below came with the S3A7 IoT Fast Prototyping Kit. I heard that it normally \ncosts $30 separately. The unit below works.\n\n\n\n\nI went online and saw similar units on sale on eBay for $11 to $17. I do not know if \nany of the units on eBay work. If you have a unit that works, please post information.",
+            "text": "Hacking requirements\n\n\nOS\n\n\nAs of 7/29/2017, the board cannot mount on a Mac.  You need Windows 7 or 10\nto really use the board and tools. You can mount the board on Linux, but you\nwill not be able to use Synergy. \n\n\nData Monitoring and Data Intelligence\n\n\n\n\nEthernet with Internet access\n\n\nUSB cable to power the board (you can power it from your laptop)\n\n\nweb browser to display dashboard \n\n\n\n\nSynergy\n\n\n\n\nSynergy Software Package (SSP)\n\n\ne2 Studio ISDE\n\n\n\n\nRestoring Factory Image\n\n\n\n\nS5 LCM Bootloader Factory Image\n\n\nUSB cable\n\n\njumper and wires\n\n\n\n\nBuilding new binary\n\n\n\n\nSynergy\n\n\nUSB cable\n\n\n\n\nReplacing Bootloader\n\n\n\n\nJ-Link Software\n pack that contains J-Flash Lite\n\n\nSEGGER J-Link JTAG debugger\n\n\n\n\nThe unit below came with the S3A7 IoT Fast Prototyping Kit. I heard that it normally \ncosts $30 separately. The unit below works.\n\n\n\n\nI went online and saw similar units on sale on eBay for $11 to $17. I do not know if \nany of the units on eBay work. If you have a unit that works, please post information.\n\n\nDesigning Your Own Board\n\n\n\n\nDesign files for S5D9 IoT Fast Prototyping Kit\n\n\nPCB design software like Altium Designer, Eagle, or many others\n\n\nManufacturing partner like \nSeeed Studio Fusion",
             "title": "Requirements"
         },
         {
@@ -59,6 +59,31 @@
             "location": "/requirements/#replacing-bootloader",
             "text": "J-Link Software  pack that contains J-Flash Lite  SEGGER J-Link JTAG debugger   The unit below came with the S3A7 IoT Fast Prototyping Kit. I heard that it normally \ncosts $30 separately. The unit below works.   I went online and saw similar units on sale on eBay for $11 to $17. I do not know if \nany of the units on eBay work. If you have a unit that works, please post information.",
             "title": "Replacing Bootloader"
+        },
+        {
+            "location": "/requirements/#designing-your-own-board",
+            "text": "Design files for S5D9 IoT Fast Prototyping Kit  PCB design software like Altium Designer, Eagle, or many others  Manufacturing partner like  Seeed Studio Fusion",
+            "title": "Designing Your Own Board"
+        },
+        {
+            "location": "/design/files/",
+            "text": "Designining Your Own Board\n\n\n\n\nDownload\n the open source design \nfiles\n to use as a starting point.\n\n\n\n\nRenesas often uses Altium Designer, but you can use any PCB design software. Altium and Gerber files\nare provided.",
+            "title": "Files"
+        },
+        {
+            "location": "/design/files/#designining-your-own-board",
+            "text": "Download  the open source design  files  to use as a starting point.   Renesas often uses Altium Designer, but you can use any PCB design software. Altium and Gerber files\nare provided.",
+            "title": "Designining Your Own Board"
+        },
+        {
+            "location": "/design/manufacturing/",
+            "text": "Manufacturing Your Own PCB Boards\n\n\nRecommend \nSeeed Studio Fusion\n. You can \nuse any manufacturer. Renesas used Seeed Studio for the S5D9 IoT Fast Prototyping Kit.\n\n\nRead \nPCB Design for Manufacture\n by seeedstudio.\n\n\nSubmit your modified Gerber files to the \nSeeed PCB/PCBA site\n\n\nCommunity member @Serdnleb reported this on a generic PCB order, NOT the S5D9 order. Your costs per board\nwill likely be higher as you'll probably use more than 2 layers. This example is just to give you a feel \nfor lowest costs based on a real-world community experience.\n\n\n\n\nI've used Seeed Fusion service a few times in the past. They are especially good if you need several of the same board as they send 10 copies at very low price. The boards are very nice quality. I live in the UK and got the boards about a week after placing my order. If you need fast shipping you can go with DHL but is a bit more expensive.\n\n\nMy latest order from Seeed, to manufacture 10 pieces of 2\u2212layer white PCB boards cost $4.9USD in total. This will cost $27USD in total to manufacture and ship to UK through DHL within 11 days.\n\n\nJune, 2017 @Serdnleb",
+            "title": "Manufacturing"
+        },
+        {
+            "location": "/design/manufacturing/#manufacturing-your-own-pcb-boards",
+            "text": "Recommend  Seeed Studio Fusion . You can \nuse any manufacturer. Renesas used Seeed Studio for the S5D9 IoT Fast Prototyping Kit.  Read  PCB Design for Manufacture  by seeedstudio.  Submit your modified Gerber files to the  Seeed PCB/PCBA site  Community member @Serdnleb reported this on a generic PCB order, NOT the S5D9 order. Your costs per board\nwill likely be higher as you'll probably use more than 2 layers. This example is just to give you a feel \nfor lowest costs based on a real-world community experience.   I've used Seeed Fusion service a few times in the past. They are especially good if you need several of the same board as they send 10 copies at very low price. The boards are very nice quality. I live in the UK and got the boards about a week after placing my order. If you need fast shipping you can go with DHL but is a bit more expensive.  My latest order from Seeed, to manufacture 10 pieces of 2\u2212layer white PCB boards cost $4.9USD in total. This will cost $27USD in total to manufacture and ship to UK through DHL within 11 days.  June, 2017 @Serdnleb",
+            "title": "Manufacturing Your Own PCB Boards"
         }
     ]
 }
