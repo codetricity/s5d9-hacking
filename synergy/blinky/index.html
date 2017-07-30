@@ -20,7 +20,7 @@
     
     
       
-        <title>Download design files - S5D9 IoT Hacking</title>
+        <title>Creating a new Blinky image - S5D9 IoT Hacking</title>
       
     
     
@@ -77,11 +77,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Design Your Own Board
+                  Develop Your Own Image
                 </span>
               
             
-            Download design files
+            Creating a new Blinky image
           
         </span>
       </div>
@@ -152,10 +152,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Develop Your Own Image
@@ -173,7 +175,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../synergy/custom/" title="Image Dev Tools" class="md-nav__link">
+    <a href="../custom/" title="Image Dev Tools" class="md-nav__link">
       Image Dev Tools
     </a>
   </li>
@@ -183,11 +185,43 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../synergy/blinky/" title="Creating a new Blinky image" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Creating a new Blinky image
+      </label>
+    
+    <a href="./" title="Creating a new Blinky image" class="md-nav__link md-nav__link--active">
       Creating a new Blinky image
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#building-a-custom-blinky" title="Building a Custom Blinky" class="md-nav__link">
+    Building a Custom Blinky
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -200,12 +234,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       Design Your Own Board
@@ -221,43 +253,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Download design files
-      </label>
-    
-    <a href="./" title="Download design files" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../design/files/" title="Download design files" class="md-nav__link">
       Download design files
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#designining-your-own-board" title="Designining Your Own Board" class="md-nav__link">
-    Designining Your Own Board
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -267,7 +267,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../manufacturing/" title="Manufacturing and assembly" class="md-nav__link">
+    <a href="../../design/manufacturing/" title="Manufacturing and assembly" class="md-nav__link">
       Manufacturing and assembly
     </a>
   </li>
@@ -297,8 +297,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#designining-your-own-board" title="Designining Your Own Board" class="md-nav__link">
-    Designining Your Own Board
+  <a href="#building-a-custom-blinky" title="Building a Custom Blinky" class="md-nav__link">
+    Building a Custom Blinky
   </a>
   
 </li>
@@ -320,14 +320,13 @@
                   <a href="None" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>Download design files</h1>
+                  <h1>Creating a new Blinky image</h1>
                 
-                <h2 id="designining-your-own-board">Designining Your Own Board</h2>
-<p><img alt="" src="../img/layout.png" /></p>
-<p><a href="http://learn.iotcommunity.io/t/s5d9-iot-fast-prot-kit-board-design-files/1104?u=craig">Download</a> the open source design <a href="../(http://learn.iotcommunity.io/t/s5d9-iot-fast-prot-kit-board-design-files/1104?u=craig)">files</a> to use as a starting point.</p>
-<p><img alt="" src="../img/files.png" /></p>
-<p>Renesas often uses Altium Designer, but you can use any PCB design software. Altium and Gerber files
-are provided.</p>
+                <h2 id="building-a-custom-blinky">Building a Custom Blinky</h2>
+<p>Blinky is the Hello World of embedded boards. This will replace your factory image
+with a new custom image that makes the onboard LEDs blink. Before you go any 
+further, verify that you can restore the factory image of your board. Read the
+overview of <a href="../custom/">creating a custom board image</a>.</p>
                 
                   
                 
@@ -346,7 +345,7 @@ are provided.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../synergy/blinky/" title="Creating a new Blinky image" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../custom/" title="Image Dev Tools" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -355,19 +354,19 @@ are provided.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Creating a new Blinky image
+                Image Dev Tools
               </span>
             </div>
           </a>
         
         
-          <a href="../manufacturing/" title="Manufacturing and assembly" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../design/files/" title="Download design files" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Manufacturing and assembly
+                Download design files
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

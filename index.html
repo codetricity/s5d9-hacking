@@ -7,7 +7,11 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
+        <meta name="description" content="Community-generated documentation to hack the Renesas S5D9 IoT Fast Prototyping Kit">
       
+      
+      
+        <meta name="author" content="Craig Oda and the learn.iotcommunity.io team">
       
       
         <link rel="shortcut icon" href="./assets/images/favicon.png">
@@ -161,6 +165,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#the-board-and-tools" title="The Board and Tools" class="md-nav__link">
+    The Board and Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#hacking-paths" title="Hacking Paths" class="md-nav__link">
     Hacking Paths
   </a>
@@ -188,10 +199,46 @@
       
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Develop Your Own Image
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Develop Your Own Image
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="requirements/" title="Requirements" class="md-nav__link">
-      Requirements
+    <a href="synergy/custom/" title="Image Dev Tools" class="md-nav__link">
+      Image Dev Tools
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="synergy/blinky/" title="Creating a new Blinky image" class="md-nav__link">
+      Creating a new Blinky image
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -205,11 +252,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
-      Design
+      Design Your Own Board
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
-        Design
+        Design Your Own Board
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -220,8 +267,8 @@
 
 
   <li class="md-nav__item">
-    <a href="design/files/" title="Files" class="md-nav__link">
-      Files
+    <a href="design/files/" title="Download design files" class="md-nav__link">
+      Download design files
     </a>
   </li>
 
@@ -232,8 +279,8 @@
 
 
   <li class="md-nav__item">
-    <a href="design/manufacturing/" title="Manufacturing" class="md-nav__link">
-      Manufacturing
+    <a href="design/manufacturing/" title="Manufacturing and assembly" class="md-nav__link">
+      Manufacturing and assembly
     </a>
   </li>
 
@@ -264,6 +311,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#the-board-and-tools" title="The Board and Tools" class="md-nav__link">
+    The Board and Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#hacking-paths" title="Hacking Paths" class="md-nav__link">
     Hacking Paths
   </a>
@@ -291,23 +345,60 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="None" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
                 
                 <h1 id="hacking-the-renesas-s5d9-iot-fast-prototyping-kit">Hacking the Renesas S5D9 IoT Fast Prototyping Kit</h1>
 <p><img alt="" src="./img/board/board-pmod.jpg" /></p>
+<h2 id="the-board-and-tools">The Board and Tools</h2>
+<p>The board is incredible. It costs $35 and Renesas is currently
+offering a <a href="http://learn.iotcommunity.io/t/s5d9-iot-fast-prototyping-kit-coupons-20-off/978">$20 coupon</a>, 
+which reduces the cost to $15 plus shipping (from the factory in China). In addition to the
+Renesas S5D9 MCU, you get a lot of onboard sensors:</p>
+<ul>
+<li>Bosch BMC 150 6-Axis sensor</li>
+<li>AMS ENS210 environmental sensor</li>
+<li>TE Connectivity MS5637-02BA03 barometric pressure sensor</li>
+<li>Knowles SPU0414HR5H-SB amplified SiSonic microphone</li>
+</ul>
+<p>The board also has 3 colored LEDs on the board plus Ethernet, USB, PMOD 2 Grove connectors and
+a JTAG connector. </p>
+<p>Previous kits with this level of peripherals would have cost $150 6 months ago $500 a few
+years ago. Including sensors on the board, eliminated the costs of many external 
+peripherals. To make the board price even more attractive, Renesas made
+ several trade-offs. These decisions made the board even more attractive
+ to hackers. At the current price of $15 (after discount, but without
+shipping), it's an astounding price drop and a compelling value.</p>
+<p>The S5D9 kit does not come with these components:</p>
+<ul>
+<li>no LCD touchscreen (which is fine for most projects and you can add it's possible to hack one on later). The previous S3A7 kit
+came with a New Haven 2.4" LCD. It made the board bigger and more expensive.</li>
+<li>no Segger debugger. The S3A7 kit came with a J-Link Lite Cortex-M 9-Pin debugger. The board comes with a bootloader. You can use a normal USB cable to load binaries on the board. </li>
+<li>no USB or Ethernet cables. This is no problem as the cables are standard and cheap.</li>
+</ul>
+<p>The board can be used to learn Synergy, which is an amazing embedded development environment
+for professionals. It's also a
+great way to learn about cloud-based IoT systems like Renesas Data Monitoring (Bug Labs) and
+Renesas Data Intelligence (Medium One).</p>
+<p>In addition to all the free access to software and tools, the design files for the board are 
+open sourced. You can use the board files to develop your own IoT device. </p>
 <h2 id="hacking-paths">Hacking Paths</h2>
+<p>With so many options, getting started hacking the board can be bewildering. I recommend
+you follow the sequence below in the order presented. Go to the free site
+<a href="http://learn.iotcommunity.io/">IoTcommunity.io</a> for tutorials that will get you started.</p>
 <ol>
 <li>Data Monitoring (Bug Labs default system image)</li>
 <li>Data Intelligence (Medium One binaries and cloud-based workflows)</li>
 <li>Renesas Synergy (Professional C/C++ development system)<ul>
-<li>Use factory default bootloader ('Put binary here' folder)</li>
-<li>Replacing factory image with your own image</li>
+<li>Use factory default bootloader (<code>Put binary here</code> folder)</li>
+<li>Replacing factory image with your custom image</li>
 </ul>
 </li>
 <li><a href="design/files/">Designing your own board</a></li>
 </ol>
 <h2 id="before-you-hack">Before You Hack</h2>
 <ul>
-<li><a href="requirements/">technical requirements</a></li>
+<li><a href="requirements.md">technical requirements</a></li>
 </ul>
                 
                   
@@ -328,13 +419,13 @@
       <nav class="md-footer-nav__inner md-grid">
         
         
-          <a href="requirements/" title="Requirements" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="synergy/custom/" title="Image Dev Tools" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Requirements
+                Image Dev Tools
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

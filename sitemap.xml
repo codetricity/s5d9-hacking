@@ -10,11 +10,19 @@
     
 
     
+        
     <url>
-     <loc>/requirements/</loc>
+     <loc>/synergy/custom/</loc>
      <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/synergy/blinky/</loc>
+     <lastmod>2017-07-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     

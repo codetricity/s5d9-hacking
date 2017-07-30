@@ -7,23 +7,27 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
+        <meta name="description" content="Community-generated documentation to hack the Renesas S5D9 IoT Fast Prototyping Kit">
       
       
       
-        <link rel="shortcut icon" href="../assets/images/favicon.png">
+        <meta name="author" content="Craig Oda and the learn.iotcommunity.io team">
+      
+      
+        <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.5">
     
     
       
-        <title>Requirements - S5D9 IoT Hacking</title>
+        <title>Image Dev Tools - S5D9 IoT Hacking</title>
       
     
     
-      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-769c285a91.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
       
     
     
@@ -60,7 +64,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href=".." title="S5D9 IoT Hacking" class="md-icon md-icon--home md-header-nav__button">
+          <a href="../.." title="S5D9 IoT Hacking" class="md-icon md-icon--home md-header-nav__button">
           </a>
         
       </div>
@@ -72,8 +76,12 @@
           
             
               
+                <span class="md-header-nav__parent">
+                  Develop Your Own Image
+                </span>
+              
             
-            Requirements
+            Image Dev Tools
           
         </span>
       </div>
@@ -134,7 +142,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Home" class="md-nav__link">
+    <a href="../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -147,77 +155,86 @@
   
 
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Develop Your Own Image
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Develop Your Own Image
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Requirements
+        Image Dev Tools
       </label>
     
-    <a href="./" title="Requirements" class="md-nav__link md-nav__link--active">
-      Requirements
+    <a href="./" title="Image Dev Tools" class="md-nav__link md-nav__link--active">
+      Image Dev Tools
     </a>
     
       
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#os" title="OS" class="md-nav__link">
-    OS
+  <a href="#creating-a-custom-board-image" title="Creating a Custom Board Image" class="md-nav__link">
+    Creating a Custom Board Image
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caution-and-warning" title="Caution and Warning" class="md-nav__link">
+    Caution and Warning
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#data-monitoring-and-data-intelligence" title="Data Monitoring and Data Intelligence" class="md-nav__link">
-    Data Monitoring and Data Intelligence
+        
+          <li class="md-nav__item">
+  <a href="#hardware-software-requirements" title="Hardware Software Requirements" class="md-nav__link">
+    Hardware Software Requirements
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#synergy" title="Synergy" class="md-nav__link">
-    Synergy
+        
+          <li class="md-nav__item">
+  <a href="#e2-studio-and-ssp" title="e2 Studio and SSP" class="md-nav__link">
+    e2 Studio and SSP
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#restoring-factory-image" title="Restoring Factory Image" class="md-nav__link">
-    Restoring Factory Image
+        
+          <li class="md-nav__item">
+  <a href="#software-configuration" title="Software Configuration" class="md-nav__link">
+    Software Configuration
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#building-new-binary" title="Building new binary" class="md-nav__link">
-    Building new binary
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#replacing-bootloader" title="Replacing Bootloader" class="md-nav__link">
-    Replacing Bootloader
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#designing-your-own-board" title="Designing Your Own Board" class="md-nav__link">
-    Designing Your Own Board
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -227,6 +244,23 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../blinky/" title="Creating a new Blinky image" class="md-nav__link">
+      Creating a new Blinky image
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -240,11 +274,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
-      Design
+      Design Your Own Board
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
-        Design
+        Design Your Own Board
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -255,8 +289,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../design/files/" title="Files" class="md-nav__link">
-      Files
+    <a href="../../design/files/" title="Download design files" class="md-nav__link">
+      Download design files
     </a>
   </li>
 
@@ -267,8 +301,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../design/manufacturing/" title="Manufacturing" class="md-nav__link">
-      Manufacturing
+    <a href="../../design/manufacturing/" title="Manufacturing and assembly" class="md-nav__link">
+      Manufacturing and assembly
     </a>
   </li>
 
@@ -292,58 +326,48 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#os" title="OS" class="md-nav__link">
-    OS
+  <a href="#creating-a-custom-board-image" title="Creating a Custom Board Image" class="md-nav__link">
+    Creating a Custom Board Image
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caution-and-warning" title="Caution and Warning" class="md-nav__link">
+    Caution and Warning
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#data-monitoring-and-data-intelligence" title="Data Monitoring and Data Intelligence" class="md-nav__link">
-    Data Monitoring and Data Intelligence
+        
+          <li class="md-nav__item">
+  <a href="#hardware-software-requirements" title="Hardware Software Requirements" class="md-nav__link">
+    Hardware Software Requirements
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#synergy" title="Synergy" class="md-nav__link">
-    Synergy
+        
+          <li class="md-nav__item">
+  <a href="#e2-studio-and-ssp" title="e2 Studio and SSP" class="md-nav__link">
+    e2 Studio and SSP
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#restoring-factory-image" title="Restoring Factory Image" class="md-nav__link">
-    Restoring Factory Image
+        
+          <li class="md-nav__item">
+  <a href="#software-configuration" title="Software Configuration" class="md-nav__link">
+    Software Configuration
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#building-new-binary" title="Building new binary" class="md-nav__link">
-    Building new binary
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#replacing-bootloader" title="Replacing Bootloader" class="md-nav__link">
-    Replacing Bootloader
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#designing-your-own-board" title="Designing Your Own Board" class="md-nav__link">
-    Designing Your Own Board
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -361,50 +385,59 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="None" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
-                <h1 id="hacking-requirements">Hacking requirements</h1>
-<h2 id="os">OS</h2>
-<p>As of 7/29/2017, the board cannot mount on a Mac.  You need Windows 7 or 10
-to really use the board and tools. You can mount the board on Linux, but you
-will not be able to use Synergy. </p>
-<h2 id="data-monitoring-and-data-intelligence">Data Monitoring and Data Intelligence</h2>
+                
+                  <h1>Image Dev Tools</h1>
+                
+                <h2 id="creating-a-custom-board-image">Creating a Custom Board Image</h2>
+<h3 id="caution-and-warning">Caution and Warning</h3>
+<p>Before you replace the board image, make sure you can 
+<a href="http://learn.iotcommunity.io/t/restoring-factory-image-on-s5d9-iot-fast-prototyping-kit/1079">restore the board with the factory image</a>.
+If you can't restore your board, you may brick the board. </p>
+<p>You will lose this functionality (which can be restored):</p>
 <ul>
-<li>Ethernet with Internet access</li>
-<li>USB cable to power the board (you can power it from your laptop)</li>
-<li>web browser to display dashboard </li>
+<li>Data Monitoring dashboard (Bug Labs) access will be wiped</li>
+<li>Data Intelligence (Medium One) binaries will not load from the <code>Put binary here</code> folder</li>
+<li>You will lose all factory bootloader functionality (the <code>update.txt</code> method will no longer work)</li>
+<li>You will lose any data and files stored to flash</li>
 </ul>
-<h2 id="synergy">Synergy</h2>
+<p><strong>Do not use this method unless you are comfortable with embedded development and feel 
+confident that you can restore your board</strong></p>
+<h3 id="hardware-software-requirements">Hardware Software Requirements</h3>
+<p>After you are confident you can restore your factory system image, acquire these components.</p>
+<p><strong> C/C++ development tools </strong></p>
 <ul>
 <li><a href="https://synergygallery.renesas.com/ssp">Synergy Software Package (SSP)</a></li>
 <li><a href="https://synergygallery.renesas.com/isde">e2 Studio ISDE</a></li>
 </ul>
-<h2 id="restoring-factory-image">Restoring Factory Image</h2>
-<ul>
-<li><a href="http://learn.iotcommunity.io/t/s5d9-iot-fast-prot-kit-factory-image-files-updated/1091">S5 LCM Bootloader Factory Image</a></li>
-<li>USB cable</li>
-<li>jumper and wires</li>
-</ul>
-<h2 id="building-new-binary">Building new binary</h2>
-<ul>
-<li>Synergy</li>
-<li>USB cable</li>
-</ul>
-<h2 id="replacing-bootloader">Replacing Bootloader</h2>
+<p><strong> Debug and Flash </strong></p>
 <ul>
 <li><a href="https://www.segger.com/downloads/jlink/">J-Link Software</a> pack that contains J-Flash Lite</li>
 <li>SEGGER J-Link JTAG debugger</li>
 </ul>
-<p>The unit below came with the S3A7 IoT Fast Prototyping Kit. I heard that it normally 
-costs $30 separately. The unit below works.</p>
-<p><img alt="" src="../img/j-link/j-link.jpg" /></p>
-<p>I went online and saw similar units on sale on eBay for $11 to $17. I do not know if 
-any of the units on eBay work. If you have a unit that works, please post information.</p>
-<h2 id="designing-your-own-board">Designing Your Own Board</h2>
-<ul>
-<li><a href="http://learn.iotcommunity.io/t/s5d9-iot-fast-prot-kit-board-design-files/1104">Design files for S5D9 IoT Fast Prototyping Kit</a></li>
-<li>PCB design software like Altium Designer, Eagle, or many others</li>
-<li>Manufacturing partner like <a href="https://www.seeedstudio.com/fusion.html">Seeed Studio Fusion</a></li>
-</ul>
+<p>I am using the J-Link JTAG debugger that was included in the Renesas S3A7 IoT Fast Prototyping Kit.
+The S5D9 IoT Fast Prototyping Kit does not come with a J-Link JTAG debugger and is intended to be
+used with the existing bootloader. You can still use Synergy to create custom <code>.srec</code> files with the
+existing bootloader and you don't need a J-Link debugger. This section is primarily for people
+that already have a J-Link JTAG debugger and don't need to buy a new one.</p>
+<p><img alt="" src="../img/j-link.jpg" /></p>
+<p>The USB on the S5D9 is only for power. The J-Flash board connects to your computer with USB. Once
+the board is connected to your computer with USB, you can use the e2 Studio debugger tools and 
+transfer the <code>.srec</code> file from inside of e2 Studio. You can also set break points and step through
+your code.</p>
+<p><img alt="" src="../img/debug.png" /></p>
+<h3 id="e2-studio-and-ssp">e2 Studio and SSP</h3>
+<p>Install e2 studio. I'm using 5.4.0.018.  (<a href="https://synergygallery.renesas.com/isde">download</a>).</p>
+<p>Install SSP. I'm using v1.2.1 (<a href="https://synergygallery.renesas.com/ssp/package#read">download</a>). </p>
+<p><img alt="" src="../img/ssp-download.png" /></p>
+<h3 id="software-configuration">Software Configuration</h3>
+<p>You will need the <a href="http://learn.iotcommunity.io/t/s5d9-iot-fast-prot-kit-synergy-board-support-package-bsp/1106">S5D9 IoT Fast Protyping Kit Board Support Package (BSP)</a>.</p>
+<p>Put the file into your e2 Studio Packs folder</p>
+<p>The default install location is:</p>
+<pre><code>C:\Renesas\e2_studio\internal\projectgen\arm\Packs
+</code></pre>
+<p><img alt="" src="../img/bsp.png" /></p>
                 
                   
                 
@@ -423,7 +456,7 @@ any of the units on eBay work. If you have a unit that works, please post inform
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../.." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -438,13 +471,13 @@ any of the units on eBay work. If you have a unit that works, please post inform
           </a>
         
         
-          <a href="../design/files/" title="Files" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../blinky/" title="Creating a new Blinky image" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Files
+                Creating a new Blinky image
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -474,10 +507,10 @@ any of the units on eBay work. If you have a unit that works, please post inform
       
     </div>
     
-      <script src="../assets/javascripts/application-07b0fbb49b.js"></script>
+      <script src="../../assets/javascripts/application-07b0fbb49b.js"></script>
       
       
-      <script>app.initialize({url:{base:".."}})</script>
+      <script>app.initialize({url:{base:"../.."}})</script>
       
     
     

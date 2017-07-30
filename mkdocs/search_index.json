@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Hacking the Renesas S5D9 IoT Fast Prototyping Kit\n\n\n\n\nHacking Paths\n\n\n\n\nData Monitoring (Bug Labs default system image)\n\n\nData Intelligence (Medium One binaries and cloud-based workflows)\n\n\nRenesas Synergy (Professional C/C++ development system)\n\n\nUse factory default bootloader ('Put binary here' folder)\n\n\nReplacing factory image with your own image\n\n\n\n\n\n\nDesigning your own board\n\n\n\n\nBefore You Hack\n\n\n\n\ntechnical requirements",
+            "text": "Hacking the Renesas S5D9 IoT Fast Prototyping Kit\n\n\n\n\nThe Board and Tools\n\n\nThe board is incredible. It costs $35 and Renesas is currently\noffering a \n$20 coupon\n, \nwhich reduces the cost to $15 plus shipping (from the factory in China). In addition to the\nRenesas S5D9 MCU, you get a lot of onboard sensors:\n\n\n\n\nBosch BMC 150 6-Axis sensor\n\n\nAMS ENS210 environmental sensor\n\n\nTE Connectivity MS5637-02BA03 barometric pressure sensor\n\n\nKnowles SPU0414HR5H-SB amplified SiSonic microphone\n\n\n\n\nThe board also has 3 colored LEDs on the board plus Ethernet, USB, PMOD 2 Grove connectors and\na JTAG connector. \n\n\nPrevious kits with this level of peripherals would have cost $150 6 months ago $500 a few\nyears ago. Including sensors on the board, eliminated the costs of many external \nperipherals. To make the board price even more attractive, Renesas made\n several trade-offs. These decisions made the board even more attractive\n to hackers. At the current price of $15 (after discount, but without\nshipping), it's an astounding price drop and a compelling value.\n\n\nThe S5D9 kit does not come with these components:\n\n\n\n\nno LCD touchscreen (which is fine for most projects and you can add it's possible to hack one on later). The previous S3A7 kit\ncame with a New Haven 2.4\" LCD. It made the board bigger and more expensive.\n\n\nno Segger debugger. The S3A7 kit came with a J-Link Lite Cortex-M 9-Pin debugger. The board comes with a bootloader. You can use a normal USB cable to load binaries on the board. \n\n\nno USB or Ethernet cables. This is no problem as the cables are standard and cheap.\n\n\n\n\nThe board can be used to learn Synergy, which is an amazing embedded development environment\nfor professionals. It's also a\ngreat way to learn about cloud-based IoT systems like Renesas Data Monitoring (Bug Labs) and\nRenesas Data Intelligence (Medium One).\n\n\nIn addition to all the free access to software and tools, the design files for the board are \nopen sourced. You can use the board files to develop your own IoT device. \n\n\nHacking Paths\n\n\nWith so many options, getting started hacking the board can be bewildering. I recommend\nyou follow the sequence below in the order presented. Go to the free site\n\nIoTcommunity.io\n for tutorials that will get you started.\n\n\n\n\nData Monitoring (Bug Labs default system image)\n\n\nData Intelligence (Medium One binaries and cloud-based workflows)\n\n\nRenesas Synergy (Professional C/C++ development system)\n\n\nUse factory default bootloader (\nPut binary here\n folder)\n\n\nReplacing factory image with your custom image\n\n\n\n\n\n\nDesigning your own board\n\n\n\n\nBefore You Hack\n\n\n\n\ntechnical requirements",
             "title": "Home"
         },
         {
@@ -11,8 +11,13 @@
             "title": "Hacking the Renesas S5D9 IoT Fast Prototyping Kit"
         },
         {
+            "location": "/#the-board-and-tools",
+            "text": "The board is incredible. It costs $35 and Renesas is currently\noffering a  $20 coupon , \nwhich reduces the cost to $15 plus shipping (from the factory in China). In addition to the\nRenesas S5D9 MCU, you get a lot of onboard sensors:   Bosch BMC 150 6-Axis sensor  AMS ENS210 environmental sensor  TE Connectivity MS5637-02BA03 barometric pressure sensor  Knowles SPU0414HR5H-SB amplified SiSonic microphone   The board also has 3 colored LEDs on the board plus Ethernet, USB, PMOD 2 Grove connectors and\na JTAG connector.   Previous kits with this level of peripherals would have cost $150 6 months ago $500 a few\nyears ago. Including sensors on the board, eliminated the costs of many external \nperipherals. To make the board price even more attractive, Renesas made\n several trade-offs. These decisions made the board even more attractive\n to hackers. At the current price of $15 (after discount, but without\nshipping), it's an astounding price drop and a compelling value.  The S5D9 kit does not come with these components:   no LCD touchscreen (which is fine for most projects and you can add it's possible to hack one on later). The previous S3A7 kit\ncame with a New Haven 2.4\" LCD. It made the board bigger and more expensive.  no Segger debugger. The S3A7 kit came with a J-Link Lite Cortex-M 9-Pin debugger. The board comes with a bootloader. You can use a normal USB cable to load binaries on the board.   no USB or Ethernet cables. This is no problem as the cables are standard and cheap.   The board can be used to learn Synergy, which is an amazing embedded development environment\nfor professionals. It's also a\ngreat way to learn about cloud-based IoT systems like Renesas Data Monitoring (Bug Labs) and\nRenesas Data Intelligence (Medium One).  In addition to all the free access to software and tools, the design files for the board are \nopen sourced. You can use the board files to develop your own IoT device.",
+            "title": "The Board and Tools"
+        },
+        {
             "location": "/#hacking-paths",
-            "text": "Data Monitoring (Bug Labs default system image)  Data Intelligence (Medium One binaries and cloud-based workflows)  Renesas Synergy (Professional C/C++ development system)  Use factory default bootloader ('Put binary here' folder)  Replacing factory image with your own image    Designing your own board",
+            "text": "With so many options, getting started hacking the board can be bewildering. I recommend\nyou follow the sequence below in the order presented. Go to the free site IoTcommunity.io  for tutorials that will get you started.   Data Monitoring (Bug Labs default system image)  Data Intelligence (Medium One binaries and cloud-based workflows)  Renesas Synergy (Professional C/C++ development system)  Use factory default bootloader ( Put binary here  folder)  Replacing factory image with your custom image    Designing your own board",
             "title": "Hacking Paths"
         },
         {
@@ -21,54 +26,49 @@
             "title": "Before You Hack"
         },
         {
-            "location": "/requirements/",
-            "text": "Hacking requirements\n\n\nOS\n\n\nAs of 7/29/2017, the board cannot mount on a Mac.  You need Windows 7 or 10\nto really use the board and tools. You can mount the board on Linux, but you\nwill not be able to use Synergy. \n\n\nData Monitoring and Data Intelligence\n\n\n\n\nEthernet with Internet access\n\n\nUSB cable to power the board (you can power it from your laptop)\n\n\nweb browser to display dashboard \n\n\n\n\nSynergy\n\n\n\n\nSynergy Software Package (SSP)\n\n\ne2 Studio ISDE\n\n\n\n\nRestoring Factory Image\n\n\n\n\nS5 LCM Bootloader Factory Image\n\n\nUSB cable\n\n\njumper and wires\n\n\n\n\nBuilding new binary\n\n\n\n\nSynergy\n\n\nUSB cable\n\n\n\n\nReplacing Bootloader\n\n\n\n\nJ-Link Software\n pack that contains J-Flash Lite\n\n\nSEGGER J-Link JTAG debugger\n\n\n\n\nThe unit below came with the S3A7 IoT Fast Prototyping Kit. I heard that it normally \ncosts $30 separately. The unit below works.\n\n\n\n\nI went online and saw similar units on sale on eBay for $11 to $17. I do not know if \nany of the units on eBay work. If you have a unit that works, please post information.\n\n\nDesigning Your Own Board\n\n\n\n\nDesign files for S5D9 IoT Fast Prototyping Kit\n\n\nPCB design software like Altium Designer, Eagle, or many others\n\n\nManufacturing partner like \nSeeed Studio Fusion",
-            "title": "Requirements"
+            "location": "/synergy/custom/",
+            "text": "Creating a Custom Board Image\n\n\nCaution and Warning\n\n\nBefore you replace the board image, make sure you can \n\nrestore the board with the factory image\n.\nIf you can't restore your board, you may brick the board. \n\n\nYou will lose this functionality (which can be restored):\n\n\n\n\nData Monitoring dashboard (Bug Labs) access will be wiped\n\n\nData Intelligence (Medium One) binaries will not load from the \nPut binary here\n folder\n\n\nYou will lose all factory bootloader functionality (the \nupdate.txt\n method will no longer work)\n\n\nYou will lose any data and files stored to flash\n\n\n\n\nDo not use this method unless you are comfortable with embedded development and feel \nconfident that you can restore your board\n\n\nHardware Software Requirements\n\n\nAfter you are confident you can restore your factory system image, acquire these components.\n\n\n C/C++ development tools \n\n\n\n\nSynergy Software Package (SSP)\n\n\ne2 Studio ISDE\n\n\n\n\n Debug and Flash \n\n\n\n\nJ-Link Software\n pack that contains J-Flash Lite\n\n\nSEGGER J-Link JTAG debugger\n\n\n\n\nI am using the J-Link JTAG debugger that was included in the Renesas S3A7 IoT Fast Prototyping Kit.\nThe S5D9 IoT Fast Prototyping Kit does not come with a J-Link JTAG debugger and is intended to be\nused with the existing bootloader. You can still use Synergy to create custom \n.srec\n files with the\nexisting bootloader and you don't need a J-Link debugger. This section is primarily for people\nthat already have a J-Link JTAG debugger and don't need to buy a new one.\n\n\n\n\nThe USB on the S5D9 is only for power. The J-Flash board connects to your computer with USB. Once\nthe board is connected to your computer with USB, you can use the e2 Studio debugger tools and \ntransfer the \n.srec\n file from inside of e2 Studio. You can also set break points and step through\nyour code.\n\n\n\n\ne2 Studio and SSP\n\n\nInstall e2 studio. I'm using 5.4.0.018.  (\ndownload\n).\n\n\nInstall SSP. I'm using v1.2.1 (\ndownload\n). \n\n\n\n\nSoftware Configuration\n\n\nYou will need the \nS5D9 IoT Fast Protyping Kit Board Support Package (BSP)\n.\n\n\nPut the file into your e2 Studio Packs folder\n\n\nThe default install location is:\n\n\nC:\\Renesas\\e2_studio\\internal\\projectgen\\arm\\Packs",
+            "title": "Image Dev Tools"
         },
         {
-            "location": "/requirements/#hacking-requirements",
+            "location": "/synergy/custom/#creating-a-custom-board-image",
             "text": "",
-            "title": "Hacking requirements"
+            "title": "Creating a Custom Board Image"
         },
         {
-            "location": "/requirements/#os",
-            "text": "As of 7/29/2017, the board cannot mount on a Mac.  You need Windows 7 or 10\nto really use the board and tools. You can mount the board on Linux, but you\nwill not be able to use Synergy.",
-            "title": "OS"
+            "location": "/synergy/custom/#caution-and-warning",
+            "text": "Before you replace the board image, make sure you can  restore the board with the factory image .\nIf you can't restore your board, you may brick the board.   You will lose this functionality (which can be restored):   Data Monitoring dashboard (Bug Labs) access will be wiped  Data Intelligence (Medium One) binaries will not load from the  Put binary here  folder  You will lose all factory bootloader functionality (the  update.txt  method will no longer work)  You will lose any data and files stored to flash   Do not use this method unless you are comfortable with embedded development and feel \nconfident that you can restore your board",
+            "title": "Caution and Warning"
         },
         {
-            "location": "/requirements/#data-monitoring-and-data-intelligence",
-            "text": "Ethernet with Internet access  USB cable to power the board (you can power it from your laptop)  web browser to display dashboard",
-            "title": "Data Monitoring and Data Intelligence"
+            "location": "/synergy/custom/#hardware-software-requirements",
+            "text": "After you are confident you can restore your factory system image, acquire these components.   C/C++ development tools    Synergy Software Package (SSP)  e2 Studio ISDE    Debug and Flash    J-Link Software  pack that contains J-Flash Lite  SEGGER J-Link JTAG debugger   I am using the J-Link JTAG debugger that was included in the Renesas S3A7 IoT Fast Prototyping Kit.\nThe S5D9 IoT Fast Prototyping Kit does not come with a J-Link JTAG debugger and is intended to be\nused with the existing bootloader. You can still use Synergy to create custom  .srec  files with the\nexisting bootloader and you don't need a J-Link debugger. This section is primarily for people\nthat already have a J-Link JTAG debugger and don't need to buy a new one.   The USB on the S5D9 is only for power. The J-Flash board connects to your computer with USB. Once\nthe board is connected to your computer with USB, you can use the e2 Studio debugger tools and \ntransfer the  .srec  file from inside of e2 Studio. You can also set break points and step through\nyour code.",
+            "title": "Hardware Software Requirements"
         },
         {
-            "location": "/requirements/#synergy",
-            "text": "Synergy Software Package (SSP)  e2 Studio ISDE",
-            "title": "Synergy"
+            "location": "/synergy/custom/#e2-studio-and-ssp",
+            "text": "Install e2 studio. I'm using 5.4.0.018.  ( download ).  Install SSP. I'm using v1.2.1 ( download ).",
+            "title": "e2 Studio and SSP"
         },
         {
-            "location": "/requirements/#restoring-factory-image",
-            "text": "S5 LCM Bootloader Factory Image  USB cable  jumper and wires",
-            "title": "Restoring Factory Image"
+            "location": "/synergy/custom/#software-configuration",
+            "text": "You will need the  S5D9 IoT Fast Protyping Kit Board Support Package (BSP) .  Put the file into your e2 Studio Packs folder  The default install location is:  C:\\Renesas\\e2_studio\\internal\\projectgen\\arm\\Packs",
+            "title": "Software Configuration"
         },
         {
-            "location": "/requirements/#building-new-binary",
-            "text": "Synergy  USB cable",
-            "title": "Building new binary"
+            "location": "/synergy/blinky/",
+            "text": "Building a Custom Blinky\n\n\nBlinky is the Hello World of embedded boards. This will replace your factory image\nwith a new custom image that makes the onboard LEDs blink. Before you go any \nfurther, verify that you can restore the factory image of your board. Read the\noverview of \ncreating a custom board image\n.",
+            "title": "Creating a new Blinky image"
         },
         {
-            "location": "/requirements/#replacing-bootloader",
-            "text": "J-Link Software  pack that contains J-Flash Lite  SEGGER J-Link JTAG debugger   The unit below came with the S3A7 IoT Fast Prototyping Kit. I heard that it normally \ncosts $30 separately. The unit below works.   I went online and saw similar units on sale on eBay for $11 to $17. I do not know if \nany of the units on eBay work. If you have a unit that works, please post information.",
-            "title": "Replacing Bootloader"
-        },
-        {
-            "location": "/requirements/#designing-your-own-board",
-            "text": "Design files for S5D9 IoT Fast Prototyping Kit  PCB design software like Altium Designer, Eagle, or many others  Manufacturing partner like  Seeed Studio Fusion",
-            "title": "Designing Your Own Board"
+            "location": "/synergy/blinky/#building-a-custom-blinky",
+            "text": "Blinky is the Hello World of embedded boards. This will replace your factory image\nwith a new custom image that makes the onboard LEDs blink. Before you go any \nfurther, verify that you can restore the factory image of your board. Read the\noverview of  creating a custom board image .",
+            "title": "Building a Custom Blinky"
         },
         {
             "location": "/design/files/",
             "text": "Designining Your Own Board\n\n\n\n\nDownload\n the open source design \nfiles\n to use as a starting point.\n\n\n\n\nRenesas often uses Altium Designer, but you can use any PCB design software. Altium and Gerber files\nare provided.",
-            "title": "Files"
+            "title": "Download design files"
         },
         {
             "location": "/design/files/#designining-your-own-board",
@@ -78,7 +78,7 @@
         {
             "location": "/design/manufacturing/",
             "text": "Manufacturing Your Own PCB Boards\n\n\nRecommend \nSeeed Studio Fusion\n. You can \nuse any manufacturer. Renesas used Seeed Studio for the S5D9 IoT Fast Prototyping Kit.\n\n\nRead \nPCB Design for Manufacture\n by seeedstudio.\n\n\nSubmit your modified Gerber files to the \nSeeed PCB/PCBA site\n\n\nCommunity member @Serdnleb reported this on a generic PCB order, NOT the S5D9 order. Your costs per board\nwill likely be higher as you'll probably use more than 2 layers. This example is just to give you a feel \nfor lowest costs based on a real-world community experience.\n\n\n\n\nI've used Seeed Fusion service a few times in the past. They are especially good if you need several of the same board as they send 10 copies at very low price. The boards are very nice quality. I live in the UK and got the boards about a week after placing my order. If you need fast shipping you can go with DHL but is a bit more expensive.\n\n\nMy latest order from Seeed, to manufacture 10 pieces of 2\u2212layer white PCB boards cost $4.9USD in total. This will cost $27USD in total to manufacture and ship to UK through DHL within 11 days.\n\n\nJune, 2017 @Serdnleb",
-            "title": "Manufacturing"
+            "title": "Manufacturing and assembly"
         },
         {
             "location": "/design/manufacturing/#manufacturing-your-own-pcb-boards",
