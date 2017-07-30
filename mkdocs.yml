@@ -1,2 +1,3 @@
 site_name: S5D9 IoT Hacking
 theme: 'material'
+google_analytics: ['UA-86439301-1', 'auto']

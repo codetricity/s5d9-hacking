@@ -32,7 +32,12 @@ will not be able to use Synergy.
 The unit below came with the S3A7 IoT Fast Prototyping Kit. I heard that it normally 
 costs $30 separately. The unit below works.
 
-![](img/j-link.jpg)
+![](img/j-link/j-link.jpg)
 
 I went online and saw similar units on sale on eBay for $11 to $17. I do not know if 
 any of the units on eBay work. If you have a unit that works, please post information.
+
+## Designing Your Own Board
+- [Design files for S5D9 IoT Fast Prototyping Kit](http://learn.iotcommunity.io/t/s5d9-iot-fast-prot-kit-board-design-files/1104)
+- PCB design software like Altium Designer, Eagle, or many others
+- Manufacturing partner like [Seeed Studio Fusion](https://www.seeedstudio.com/fusion.html)
