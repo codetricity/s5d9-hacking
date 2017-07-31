@@ -17,7 +17,7 @@
         },
         {
             "location": "/hackingpaths/",
-            "text": "With so many options, getting started hacking the board can be bewildering. I recommend\nyou follow the sequence below in the order presented. Go to the free site\n\nIoTcommunity.io\n for tutorials that will get you started.\n\n\n\n\nData Monitoring\n (Bug Labs default system image)\n\n\nData Intelligence (Medium One binaries and cloud-based workflows)\n\n\nBuild your custom image (Professional C/C++ development system)\n\n\nCustom image that uses bootloader (\nPut binary here\n folder)\n\n\nCustom image that replaces bootloader\n\n\n\n\n\n\nDesigning your own board",
+            "text": "With so many options, getting started hacking the board can be bewildering. I recommend\nyou follow the sequence below in the order presented. Go to the free site\n\nIoTcommunity.io\n for tutorials that will get you started.\n\n\n\n\nData Monitoring\n (Bug Labs default system image)\n\n\nData Intelligence\n (Medium One binaries and cloud-based workflows)\n\n\nBuild your custom image (Professional C/C++ development system)\n\n\nCustom image that uses bootloader (\nPut binary here\n folder)\n\n\nCustom image that replaces bootloader\n\n\n\n\n\n\nDesigning your own board",
             "title": "Hacking Paths"
         },
         {
