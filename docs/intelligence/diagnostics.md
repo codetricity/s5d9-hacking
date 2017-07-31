@@ -141,7 +141,7 @@ After a few seconds, you should have received a Daily Report in your email with 
 
 This report shows Temperature, Pressure, Humidity, Noise, and Vibration levels in Bar Charts. The sensor values are averaged and bucketed per hour.  There are also two pie charts that show the vibration status and board online status percentage. Lastly, there is a Geo map that provides your location based off of your ip address. Here is a sample report:
 
-![](img/report1.png)
+![](img/report-1.png)
 
 ![](img/vibration-pie.png)
 
