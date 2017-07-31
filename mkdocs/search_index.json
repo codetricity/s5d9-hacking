@@ -116,6 +116,46 @@
             "title": "Helpful Links"
         },
         {
+            "location": "/intelligence/overview/",
+            "text": "The S5D9 IoT Fast Prototyping Kit ships with both a boatloader and \na default system image to connect to the Renesas Data Monitoring system (Bug Labs).\n\n\nTo use Data Intelligence (Medium One), you'll need to download a new binary to\nyour Windows workstation, then use the USB cable to move the binary from your\nWindows computer to the S5D9. \n\n\n\n\nNOTE: You cannot use a Mac for to move the binary.\n\n\n\n\nWith the S5D9 board plugged into USB only, the red LED of the board will\nbe on and the yellow LED will be flashing. The board will be trying to connect\nto the Renesas Data Monitoring system.\n\n\n\n\n\n\nNOTE: There's been reports of slow data transmission speeds with the Ethernet plugged in.\nLeave the Ethernet unplugged.\n\n\n\n\nDownload Data Intelligence Binary\n\n\nDownload\n\nMedium One's diagnostics-intelligence-s5d9.srec file.\n\n\nOn your Windows workstation, the S5D9 board will look like a USB drive. Move the binary you just \ndownloaded in the folder \nPut binary here\n.\n\n\n\n\n\n\nNOTE: This process could take 7 minutes. Even though the binary is only 1.2M and\nis moving data over USB, the process moves slowly.\n\n\n\n\nAfter 7 minutes, the transfer completes.\n\n\n\n\nConfigure Update Files\n\n\nIn the main directory, delete the file \nloaded.txt\n\n\n\n\nCreate a new file called \nupdate.txt\n\n\nAdd the name of the \n.srec\n file to the new file.\n\n\n\n\nPower Cycle Board\n\n\nWhen you power cycle the board, the \nupdate.txt\n file will be automatically deleted.\nA new \nloaded.txt\n file will be created. The \nloaded.txt\n file will contain\n\ndiagnostics-intelligence-s5d9.srec\n.",
+            "title": "Overview and Installation"
+        },
+        {
+            "location": "/intelligence/overview/#download-data-intelligence-binary",
+            "text": "Download \nMedium One's diagnostics-intelligence-s5d9.srec file.  On your Windows workstation, the S5D9 board will look like a USB drive. Move the binary you just \ndownloaded in the folder  Put binary here .    NOTE: This process could take 7 minutes. Even though the binary is only 1.2M and\nis moving data over USB, the process moves slowly.   After 7 minutes, the transfer completes.",
+            "title": "Download Data Intelligence Binary"
+        },
+        {
+            "location": "/intelligence/overview/#configure-update-files",
+            "text": "In the main directory, delete the file  loaded.txt   Create a new file called  update.txt  Add the name of the  .srec  file to the new file.",
+            "title": "Configure Update Files"
+        },
+        {
+            "location": "/intelligence/overview/#power-cycle-board",
+            "text": "When you power cycle the board, the  update.txt  file will be automatically deleted.\nA new  loaded.txt  file will be created. The  loaded.txt  file will contain diagnostics-intelligence-s5d9.srec .",
+            "title": "Power Cycle Board"
+        },
+        {
+            "location": "/intelligence/diagnostics/",
+            "text": "Activate\n your Renesas S5D9 Diagnostics Intelligence Kit. \n\n\n\n\nActivate\n\n\nAfter you press \nActivate\n it will take a few minutes for the system to send you an email.\n\n\nDownload m1config.txt from your email\n\n\nYou will receive two emails. Open the one with the subject line, \nYour S5D9 IoT Fast Prototyping Kit is activated\n.\n\n\n\n\nScroll to the bottom of the email to see the attachment. Download the attachment \nm1config.txt\n.\n\n\n\n\nMove m1config.txt to board\n\n\nCopy the file you received in your email to the S5D9 you have connected to your computer with USB.\n\n\n\n\nYou can optionally verify that the contents of the file on the S5D9 board match the \ncontents of the file on your workstation.\n\n\nAfter the board boots the LED light will be solid green.\n\n\nLog Into Renesa IoT Sandbox Data Intelligence\n\n\n[https://renesas-na-sandbox.mediumone.com/login]\n\n\n\n\nThe login information is in a separate email.\n\n\nAfter you log into the dashboard, select the project in the upper right. You named \nthe project during the activation step above.\n\n\nYou must also select a user from the drop down menu. It will be a long string of digits.",
+            "title": "Diagnostics Intelligence Tutorial"
+        },
+        {
+            "location": "/intelligence/diagnostics/#download-m1configtxt-from-your-email",
+            "text": "You will receive two emails. Open the one with the subject line,  Your S5D9 IoT Fast Prototyping Kit is activated .   Scroll to the bottom of the email to see the attachment. Download the attachment  m1config.txt .",
+            "title": "Download m1config.txt from your email"
+        },
+        {
+            "location": "/intelligence/diagnostics/#move-m1configtxt-to-board",
+            "text": "Copy the file you received in your email to the S5D9 you have connected to your computer with USB.   You can optionally verify that the contents of the file on the S5D9 board match the \ncontents of the file on your workstation.  After the board boots the LED light will be solid green.",
+            "title": "Move m1config.txt to board"
+        },
+        {
+            "location": "/intelligence/diagnostics/#log-into-renesa-iot-sandbox-data-intelligence",
+            "text": "[https://renesas-na-sandbox.mediumone.com/login]   The login information is in a separate email.  After you log into the dashboard, select the project in the upper right. You named \nthe project during the activation step above.  You must also select a user from the drop down menu. It will be a long string of digits.",
+            "title": "Log Into Renesa IoT Sandbox Data Intelligence"
+        },
+        {
             "location": "/synergy/custom/",
             "text": "Creating a Custom Board Image\n\n\nCaution and Warning\n\n\nBefore you replace the board image, make sure you can \n\nrestore the board with the factory image\n.\nIf you can't restore your board, you may brick the board. \n\n\nYou will lose this functionality (which can be restored):\n\n\n\n\nData Monitoring dashboard (Bug Labs) access will be wiped\n\n\nData Intelligence (Medium One) binaries will not load from the \nPut binary here\n folder\n\n\nYou will lose all factory bootloader functionality (the \nupdate.txt\n method will no longer work)\n\n\nYou will lose any data and files stored to flash\n\n\n\n\nDo not use this method unless you are comfortable with embedded development and feel \nconfident that you can restore your board\n\n\nHardware Software Requirements\n\n\nAfter you are confident you can restore your factory system image, acquire these components.\n\n\n C/C++ development tools \n\n\n\n\nSynergy Software Package (SSP)\n\n\ne2 Studio ISDE\n\n\n\n\n Debug and Flash \n\n\n\n\nJ-Link Software\n pack that contains J-Flash Lite\n\n\nSEGGER J-Link JTAG debugger\n\n\n\n\nI am using the J-Link JTAG debugger that was included in the Renesas S3A7 IoT Fast Prototyping Kit.\nThe S5D9 IoT Fast Prototyping Kit does not come with a J-Link JTAG debugger and is intended to be\nused with the existing bootloader. You can still use Synergy to create custom \n.srec\n files with the\nexisting bootloader and you don't need a J-Link debugger. This section is primarily for people\nthat already have a J-Link JTAG debugger and don't need to buy a new one.\n\n\n\n\nThe USB on the S5D9 is only for power. The J-Flash board connects to your computer with USB. Once\nthe board is connected to your computer with USB, you can use the e2 Studio debugger tools and \ntransfer the \n.srec\n file from inside of e2 Studio. You can also set break points and step through\nyour code.\n\n\n\n\ne2 Studio and SSP\n\n\nInstall e2 studio. I'm using 5.4.0.018.  (\ndownload\n).\n\n\nInstall SSP. I'm using v1.2.1 (\ndownload\n). \n\n\n\n\nSoftware Configuration\n\n\nYou will need the \nS5D9 IoT Fast Protyping Kit Board Support Package (BSP)\n.\n\n\nPut the file into your e2 Studio Packs folder\n\n\nThe default install location is:\n\n\nC:\\Renesas\\e2_studio\\internal\\projectgen\\arm\\Packs",
             "title": "Image Dev Tools"
