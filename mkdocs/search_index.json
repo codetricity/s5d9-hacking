@@ -236,6 +236,31 @@
             "title": "Configure J-Flash Lite"
         },
         {
+            "location": "/synergy/blinkymods/",
+            "text": "Modding Blinky\n\n\nThis will guide you through simple modifications of the blinky template application\nto get more familiar with editing C code with e2 Studio and transferring the binary\nto your board.\n\n\nModify Blink Rate\n\n\nIn \nhal_entry.c\n change the \nbsp_delay_units_t\n to your favorite millisecond delay. I'm using 500ms delay.\n\n\n\n\nLook for \nbsp_delay_units\n. \n\n\n\n\n\n\n\nModifying Which LED Blinks\n\n\nin \nhal_entry.c\n comment out the \nfor\n loop that displays all LEDs and select the LEDs you want to blink with one or more of these array elements:\n\n\n\n\nleds.p_leds[0]\n\n\nleds.p_leds[1]\n\n\n'leds.p_leds[2]`\n\n\n\n\n\n\nI'm going to flash only the green LED, \nleds.p_leds[0]\n\n\n\n\n\nAlternating Blink between two LEDs\n\n\nIn order to alternate LEDs, you need to flip the state of at least LED. If the LED is \non\n then turn it off.\nIf you use one statement to flip all the LEDs to on, then all LEDs will go on, regardless of the\ninitial state. In this example, the level is a boolean variable. \n\n\nI'm using the template conditional to flip the third LED and have a different conditional to\nchange the state of the first LED. \n\n\nThis is just to show you the old code and the new code in the same snippet. \n\n\nAll LEDs are off when the board boots. If I set the first LED to true, then led[0] and led[2] will alternate.\n\n\n bool level_0 = true;\n\n    while(1)\n    {\n\n\n        /* Determine the next state of the LEDs */\n        if(IOPORT_LEVEL_LOW == level)\n        {\n            level = IOPORT_LEVEL_HIGH;\n        }\n        else\n        {\n            level = IOPORT_LEVEL_LOW;\n        }\n\n        /* Update all board LEDs */\n//        for(uint32_t i = 0; i < leds.led_count; i++)\n//        {\n//            g_ioport.p_api->pinWrite(leds.p_leds[i], level);\n//        }\n\n        g_ioport.p_api->pinWrite(leds.p_leds[2], level);\n        g_ioport.p_api->pinWrite(leds.p_leds[0], level_0);\n\n        if(level_0)\n        {\n            level_0 = false;\n        }\n        else\n        {\n            level_0 = true;\n        }\n\n        /* Delay */\n        R_BSP_SoftwareDelay(delay, bsp_delay_units);\n    }",
+            "title": "Modding Blinky"
+        },
+        {
+            "location": "/synergy/blinkymods/#modding-blinky",
+            "text": "This will guide you through simple modifications of the blinky template application\nto get more familiar with editing C code with e2 Studio and transferring the binary\nto your board.",
+            "title": "Modding Blinky"
+        },
+        {
+            "location": "/synergy/blinkymods/#modify-blink-rate",
+            "text": "In  hal_entry.c  change the  bsp_delay_units_t  to your favorite millisecond delay. I'm using 500ms delay.   Look for  bsp_delay_units .",
+            "title": "Modify Blink Rate"
+        },
+        {
+            "location": "/synergy/blinkymods/#modifying-which-led-blinks",
+            "text": "in  hal_entry.c  comment out the  for  loop that displays all LEDs and select the LEDs you want to blink with one or more of these array elements:   leds.p_leds[0]  leds.p_leds[1]  'leds.p_leds[2]`    I'm going to flash only the green LED,  leds.p_leds[0]",
+            "title": "Modifying Which LED Blinks"
+        },
+        {
+            "location": "/synergy/blinkymods/#alternating-blink-between-two-leds",
+            "text": "In order to alternate LEDs, you need to flip the state of at least LED. If the LED is  on  then turn it off.\nIf you use one statement to flip all the LEDs to on, then all LEDs will go on, regardless of the\ninitial state. In this example, the level is a boolean variable.   I'm using the template conditional to flip the third LED and have a different conditional to\nchange the state of the first LED.   This is just to show you the old code and the new code in the same snippet.   All LEDs are off when the board boots. If I set the first LED to true, then led[0] and led[2] will alternate.   bool level_0 = true;\n\n    while(1)\n    {\n\n\n        /* Determine the next state of the LEDs */\n        if(IOPORT_LEVEL_LOW == level)\n        {\n            level = IOPORT_LEVEL_HIGH;\n        }\n        else\n        {\n            level = IOPORT_LEVEL_LOW;\n        }\n\n        /* Update all board LEDs */\n//        for(uint32_t i = 0; i < leds.led_count; i++)\n//        {\n//            g_ioport.p_api->pinWrite(leds.p_leds[i], level);\n//        }\n\n        g_ioport.p_api->pinWrite(leds.p_leds[2], level);\n        g_ioport.p_api->pinWrite(leds.p_leds[0], level_0);\n\n        if(level_0)\n        {\n            level_0 = false;\n        }\n        else\n        {\n            level_0 = true;\n        }\n\n        /* Delay */\n        R_BSP_SoftwareDelay(delay, bsp_delay_units);\n    }",
+            "title": "Alternating Blink between two LEDs"
+        },
+        {
             "location": "/design/files/",
             "text": "Designining Your Own Board\n\n\n\n\nDownload\n the open source design \nfiles\n to use as a starting point.\n\n\n\n\nRenesas often uses Altium Designer, but you can use any PCB design software. Altium and Gerber files\nare provided.",
             "title": "Download design files"
