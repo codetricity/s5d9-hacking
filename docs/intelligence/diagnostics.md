@@ -20,7 +20,7 @@ Scroll to the bottom of the email to see the attachment. Download the attachment
 
 Copy the file you received in your email to the S5D9 you have connected to your computer with USB.
 
-![](img/m1config-contents.png)
+![](img/m1config-contents.PNG)
 
 You can optionally verify that the contents of the file on the S5D9 board match the 
 contents of the file on your workstation.
