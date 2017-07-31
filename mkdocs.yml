@@ -12,6 +12,8 @@ pages:
     - 'Board and Dev Tools': 'index.md'
     - 'Hacking Paths': 'hackingpaths.md'
     - 'Requirements': 'requirements.md'
+- Data Monitoring:
+    - 'Getting Started': 'monitoring/starting.md'
 - Develop Your Own Image: 
     - 'Image Dev Tools': 'synergy/custom.md'
     - 'Creating a new Blinky image': 'synergy/blinky.md'
