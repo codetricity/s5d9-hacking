@@ -257,13 +257,13 @@
         },
         {
             "location": "/design/files/",
-            "text": "Designining Your Own Board\n\n\n\n\nDownload\n the open source design \nfiles\n to use as a starting point.\n\n\n\n\nRenesas often uses Altium Designer, but you can use any PCB design software. Altium and Gerber files\nare provided.",
+            "text": "Designing Your Own Board\n\n\n\n\nDownload\n the open source design \nfiles\n to use as a starting point.\n\n\n\n\nRenesas often uses Altium Designer, but you can use any PCB design software. Altium and Gerber files\nare provided.",
             "title": "Download design files"
         },
         {
-            "location": "/design/files/#designining-your-own-board",
+            "location": "/design/files/#designing-your-own-board",
             "text": "Download  the open source design  files  to use as a starting point.   Renesas often uses Altium Designer, but you can use any PCB design software. Altium and Gerber files\nare provided.",
-            "title": "Designining Your Own Board"
+            "title": "Designing Your Own Board"
         },
         {
             "location": "/design/manufacturing/",
