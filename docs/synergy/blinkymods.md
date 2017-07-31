@@ -1,10 +1,8 @@
-## Modding Blinky
-
 This will guide you through simple modifications of the blinky template application
 to get more familiar with editing C code with e2 Studio and transferring the binary
 to your board.
 
-### Modify Blink Rate
+## Modify Blink Rate
 
 In `hal_entry.c` change the `bsp_delay_units_t` to your favorite millisecond delay. I'm using 500ms delay.
 
@@ -16,7 +14,7 @@ Look for `bsp_delay_units`.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_fXya_Rx5Lg" frameborder="0" allowfullscreen></iframe>
 
-### Modifying Which LED Blinks 
+## Modifying Which LED Blinks 
 
 in `hal_entry.c` comment out the `for` loop that displays all LEDs and select the LEDs you want to blink with one or more of these array elements:
 
@@ -30,7 +28,7 @@ I'm going to flash only the green LED, `leds.p_leds[0]`
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8H9B5rBN7po" frameborder="0" allowfullscreen></iframe>
 
-### Alternating Blink between two LEDs
+## Alternating Blink between two LEDs
 
 In order to alternate LEDs, you need to flip the state of at least LED. If the LED is *on* then turn it off.
 If you use one statement to flip all the LEDs to on, then all LEDs will go on, regardless of the
