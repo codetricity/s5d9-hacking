@@ -1,4 +1,4 @@
-## Designining Your Own Board
+## Designing Your Own Board
 
 ![](img/layout.png)
 
