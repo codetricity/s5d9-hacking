@@ -21,6 +21,7 @@ pages:
 - Develop Your Own Image: 
     - 'Image Dev Tools': 'synergy/custom.md'
     - 'Creating a new Blinky image': 'synergy/blinky.md'
+    - 'Modding Blinky': synergy/blinkymods.md
 - Design Your Own Board:
     - 'Download design files': 'design/files.md'
     - 'Manufacturing and assembly': 'design/manufacturing.md'
