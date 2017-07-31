@@ -428,22 +428,22 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#modifying-which-led-blinks" title="Modifying Which LED Blinks" class="md-nav__link">
     Modifying Which LED Blinks
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#alternating-blink-between-two-leds" title="Alternating Blink between two LEDs" class="md-nav__link">
     Alternating Blink between two LEDs
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -542,22 +542,22 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#modifying-which-led-blinks" title="Modifying Which LED Blinks" class="md-nav__link">
     Modifying Which LED Blinks
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#alternating-blink-between-two-leds" title="Alternating Blink between two LEDs" class="md-nav__link">
     Alternating Blink between two LEDs
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -591,7 +591,7 @@ to your board.</p>
 <p><img alt="" src="../img/blinky-mods/500ms.png" /></p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_fXya_Rx5Lg" frameborder="0" allowfullscreen></iframe>
 
-<h2 id="modifying-which-led-blinks">Modifying Which LED Blinks</h2>
+<h3 id="modifying-which-led-blinks">Modifying Which LED Blinks</h3>
 <p>in <code>hal_entry.c</code> comment out the <code>for</code> loop that displays all LEDs and select the LEDs you want to blink with one or more of these array elements:</p>
 <ul>
 <li><code>leds.p_leds[0]</code></li>
@@ -602,7 +602,7 @@ to your board.</p>
 <p>I'm going to flash only the green LED, <code>leds.p_leds[0]</code></p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8H9B5rBN7po" frameborder="0" allowfullscreen></iframe>
 
-<h2 id="alternating-blink-between-two-leds">Alternating Blink between two LEDs</h2>
+<h3 id="alternating-blink-between-two-leds">Alternating Blink between two LEDs</h3>
 <p>In order to alternate LEDs, you need to flip the state of at least LED. If the LED is <em>on</em> then turn it off.
 If you use one statement to flip all the LEDs to on, then all LEDs will go on, regardless of the
 initial state. In this example, the level is a boolean variable. </p>
