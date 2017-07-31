@@ -17,6 +17,7 @@ pages:
 - Data Intelligence:
     - 'Overview and Installation': 'intelligence/overview.md'
     - 'Diagnostics Intelligence Tutorial': 'intelligence/diagnostics.md'
+    - 'Additional Data Intelligence Tutorials': 'intelligence/tutorials.md'
 - Develop Your Own Image: 
     - 'Image Dev Tools': 'synergy/custom.md'
     - 'Creating a new Blinky image': 'synergy/blinky.md'
