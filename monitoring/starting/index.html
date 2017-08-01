@@ -336,6 +336,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#create-a-new-freeboard" title="Create a New Freeboard" class="md-nav__link">
+    Create a New Freeboard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#datasources" title="Datasources" class="md-nav__link">
     Datasources
   </a>
@@ -611,6 +618,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#create-a-new-freeboard" title="Create a New Freeboard" class="md-nav__link">
+    Create a New Freeboard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#datasources" title="Datasources" class="md-nav__link">
     Datasources
   </a>
@@ -704,10 +718,29 @@ Mac to view the dashboard.</p>
 <p><img alt="" src="../img/freeboard-login.png" /></p>
 <p>If you get lost, just remember to go to 
 <a href="https://renesas.freeboard.io/">https://renesas.freeboard.io/</a></p>
+<h3 id="create-a-new-freeboard">Create a New Freeboard</h3>
+<p><img alt="" src="../img/freeboard/freeboard-new.png" /></p>
 <h3 id="datasources">Datasources</h3>
-<p>Your Renesas Synery Kit comes with software that allows the device to connect to the <a href="https://dweet.io">dweet messaging platform</a>.</p>
-<p>The dweet platform is one possible datasource that freeboard can use to display data. Your custom dashboard will already be set up with this datasource, titled Renesas-Dweet (This is a custom instance of dweet supplied by Bug Labs, to Renesas. Further customization is available upon request). </p>
-<p>To add a new datasource, such as a 3rd party API, Click on the ADD button.</p>
+<p>Your Renesas S5D9 IoT Fast Prototyping Kit comes with software that allows the device to connect to 
+the <a href="https://dweet.io">dweet messaging platform</a>. We'll focus on connecting your Renesas board and a
+few other data sources to Freeboard. We will not connect your mobile phone to Freeboard.</p>
+<p>If you see the box below, close it.</p>
+<p><img alt="" src="../img/freeboard/qr-close.png" /></p>
+<p>The dweet platform is one possible datasource that freeboard can use to display data. Your dashboard may already be set up with this datasource, titled Renesas-Dweet. If 
+it is, skip the next step. </p>
+<p>Click <em>Add</em> to create a new data source.</p>
+<p><img alt="" src="../img/freeboard/add-source.png" /></p>
+<p>Select <em>Renesas Dweet</em> as the <em>TYPE</em>.</p>
+<p><img alt="" src="../img/freeboard/renesas-dweet.png" /></p>
+<p>Specify your personal Thing Name that was on the ThingName.txt file on your
+board. If you're in an IoTcommunity.io workshop, the Thing Name may be 
+on a sticker on the back of the board. The name of the Dweet can be anything.
+We'll name it Renesas-Dweet to make it easy to understand. Leave the key blank.</p>
+<p><img alt="" src="../img/freeboard/source.png" /></p>
+<p>Immediately after I create my data source, it's automatically updated. My board is 
+plugged into Ethernet and sending data.</p>
+<p><img alt="" src="../img/freeboard/source-created.png" /></p>
+<p>To add another datasource, such as a 3rd party API, Click on the ADD button.</p>
 <p><img alt="" src="../img/new-dweet.png" /></p>
 <p>Next, choose the datasource you wish to connect. For example, choose the JSON datasource to add a 3rd party web API. In the following example, we choose the Weather datasource.</p>
 <p><img alt="" src="../img/weather.png" /></p>
