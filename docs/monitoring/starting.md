@@ -57,13 +57,45 @@ If you already have a Freeboard account through Renesas, you must sign in throug
 If you get lost, just remember to go to 
 [https://renesas.freeboard.io/](https://renesas.freeboard.io/)
 
+### Create a New Freeboard
+
+![](img/freeboard/freeboard-new.png)
+
 ### Datasources
 
-Your Renesas Synery Kit comes with software that allows the device to connect to the [dweet messaging platform](https://dweet.io).
+Your Renesas S5D9 IoT Fast Prototyping Kit comes with software that allows the device to connect to 
+the [dweet messaging platform](https://dweet.io). We'll focus on connecting your Renesas board and a
+few other data sources to Freeboard. We will not connect your mobile phone to Freeboard.
 
-The dweet platform is one possible datasource that freeboard can use to display data. Your custom dashboard will already be set up with this datasource, titled Renesas-Dweet (This is a custom instance of dweet supplied by Bug Labs, to Renesas. Further customization is available upon request). 
+If you see the box below, close it.
 
-To add a new datasource, such as a 3rd party API, Click on the ADD button.
+![](img/freeboard/qr-close.png)
+
+The dweet platform is one possible datasource that freeboard can use to display data. Your dashboard may already be set up with this datasource, titled Renesas-Dweet. If 
+it is, skip the next step. 
+
+Click *Add* to create a new data source.
+
+![](img/freeboard/add-source.png)
+
+Select *Renesas Dweet* as the *TYPE*.
+
+![](img/freeboard/renesas-dweet.png)
+
+Specify your personal Thing Name that was on the ThingName.txt file on your
+board. If you're in an IoTcommunity.io workshop, the Thing Name may be 
+on a sticker on the back of the board. The name of the Dweet can be anything.
+We'll name it Renesas-Dweet to make it easy to understand. Leave the key blank.
+
+![](img/freeboard/source.png)
+
+Immediately after I create my data source, it's automatically updated. My board is 
+plugged into Ethernet and sending data.
+
+![](img/freeboard/source-created.png)
+
+
+To add another datasource, such as a 3rd party API, Click on the ADD button.
 
 ![](img/new-dweet.png)
 
