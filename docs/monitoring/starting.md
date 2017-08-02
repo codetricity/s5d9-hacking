@@ -45,7 +45,7 @@ If you don't have the sticker on the back with the Thing Name already there for 
 
 * First connect the Ethernet port on the board to an Ethernet port on a network router which is internet enabled. 
 
-* Tehn open a web browser and go to [www.renesas.com/iotsandbox/S5D9/getstarted](www.renesas.com/iotsandbox/S5D9/getstarted). 
+* Then open a web browser and go to: [www.renesas.com/iotsandbox/S5D9/getstarted](www.renesas.com/iotsandbox/S5D9/getstarted) 
 
 * Enter your board’s Thing Name into the field marked “Enter Thing Name here…” and press the “Try it now!” button. 
 
