@@ -1,7 +1,7 @@
 
 ## Data Monitoring powered by BugLabs
 
-### Step 1 
+## Connect Board to USB and Ethernet
 
 * Take the board out of the box and connect the USB port on the board to a USB port on your laptop.  This will power up the board and the board will enumerate as a USB drive on your laptop.  
 
@@ -15,7 +15,9 @@ Mac to view the dashboard.
 ![](img/usb-ethernet.jpg)
 
 
-### Step 2 
+## Access S5D9 Sensor Data on Renesas Data Monitoring Dashboard 
+
+Terminology: The Renesas Data Monitoring Dashboard is also referred to as *Freeboard*
 
 * Click on the USB drive which represents your board.  
 
@@ -38,14 +40,14 @@ You can shake the board to watch the accelerometer readings change or snap your 
 ![](img/dash2.png)
 
 
-## Using Freeboard
+## Using Renesas Data Intelligence Dashboard (Freeboard)
 
 [Freeboard](https://renesas.freeboard.io) is a web-based visualization tool used for displaying and interacting with data. Freeboard is open-source and fully-customizable, allowing the user to create rich Internet of Things applications.
 
 Sign up for a Renesas Freeboard account to do more:
 [https://renesas.freeboard.io/signup](https://renesas.freeboard.io/signup)
 
-### Already Have a Freeboard Account?
+### Already Have a Renesas Freeboard Account?
 
 
 If you already have a Freeboard account through Renesas, you must sign in through 
@@ -57,7 +59,7 @@ If you already have a Freeboard account through Renesas, you must sign in throug
 If you get lost, just remember to go to 
 [https://renesas.freeboard.io/](https://renesas.freeboard.io/)
 
-### Create a New Freeboard
+### Create a New Renesas Freeboard
 
 ![](img/freeboard/freeboard-new.png)
 
@@ -74,7 +76,7 @@ If you see the box below, close it.
 The dweet platform is one possible datasource that freeboard can use to display data. Your dashboard may already be set up with this datasource, titled Renesas-Dweet. If 
 it is, skip the next step. 
 
-### Add Your S5D9 As the Data Source
+### Add Your Renesas S5D9 As the Data Source
 
 Click *Add* to create a new data source.
 
