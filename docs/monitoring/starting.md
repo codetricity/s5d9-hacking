@@ -74,6 +74,8 @@ If you see the box below, close it.
 The dweet platform is one possible datasource that freeboard can use to display data. Your dashboard may already be set up with this datasource, titled Renesas-Dweet. If 
 it is, skip the next step. 
 
+### Add Your S5D9 As the Data Source
+
 Click *Add* to create a new data source.
 
 ![](img/freeboard/add-source.png)
@@ -94,6 +96,11 @@ plugged into Ethernet and sending data.
 
 ![](img/freeboard/source-created.png)
 
+Add a pane.
+
+![](img/freeboard/add-pane.png)
+
+### Add a 3rd party API as Data Source
 
 To add another datasource, such as a 3rd party API, Click on the ADD button.
 
