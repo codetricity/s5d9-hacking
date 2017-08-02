@@ -136,6 +136,11 @@
             "title": "Helpful Links"
         },
         {
+            "location": "/monitoring/dweet/",
+            "text": "With your S5D9 plugged into both USB and Ethernet, modify this URL and put it into a browser.\n\n\nhttps://renesas.dweet.io/get/dweets/for/S5D9-f878\n\n\n\n\n\nYou can also use the IoT Sandbox API console.\n\n\nhttp://renesas.dweet.io/play/",
+            "title": "Getting Data With API"
+        },
+        {
             "location": "/intelligence/overview/",
             "text": "The S5D9 IoT Fast Prototyping Kit ships with both a boatloader and \na default system image to connect to the Renesas Data Monitoring system (Bug Labs).\n\n\nTo use Data Intelligence (Medium One), you'll need to download a new binary to\nyour Windows workstation, then use the USB cable to move the binary from your\nWindows computer to the S5D9. \n\n\n\n\nNOTE: You cannot use a Mac for to move the binary.\n\n\n\n\nWith the S5D9 board plugged into USB only, the red LED of the board will\nbe on and the yellow LED will be flashing. The board will be trying to connect\nto the Renesas Data Monitoring system.\n\n\n\n\n\n\nNOTE: There's been reports of slow data transmission speeds with the Ethernet plugged in.\nLeave the Ethernet unplugged.\n\n\n\n\nDownload Data Intelligence Binary\n\n\nDownload\n\nMedium One's diagnostics-intelligence-s5d9.srec file.\n\n\nOn your Windows workstation, the S5D9 board will look like a USB drive. Move the binary you just \ndownloaded in the folder \nPut binary here\n.\n\n\n\n\n\n\nNOTE: This process could take 7 minutes. Even though the binary is only 1.2M and\nis moving data over USB, the process moves slowly.\n\n\n\n\nAfter 7 minutes, the transfer completes.\n\n\n\n\nConfigure Update Files\n\n\nIn the main directory, delete the file \nloaded.txt\n\n\n\n\nCreate a new file called \nupdate.txt\n\n\nAdd the name of the \n.srec\n file to the new file.\n\n\n\n\nPower Cycle Board\n\n\nWhen you power cycle the board, the \nupdate.txt\n file will be automatically deleted.\nA new \nloaded.txt\n file will be created. The \nloaded.txt\n file will contain\n\ndiagnostics-intelligence-s5d9.srec\n.",
             "title": "Overview and Installation"

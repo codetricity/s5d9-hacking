@@ -20,7 +20,7 @@
     
     
       
-        <title>Modding Blinky - S5D9 IoT Hacking</title>
+        <title>Getting Data With API - S5D9 IoT Hacking</title>
       
     
     
@@ -79,11 +79,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Develop Your Own Image
+                  Data Monitoring
                 </span>
               
             
-            Modding Blinky
+            Getting Data With API
           
         </span>
       </div>
@@ -248,10 +248,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Data Monitoring
@@ -269,7 +271,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../monitoring/starting/" title="Getting Started" class="md-nav__link">
+    <a href="../starting/" title="Getting Started" class="md-nav__link">
       Getting Started
     </a>
   </li>
@@ -279,11 +281,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../monitoring/dweet/" title="Getting Data With API" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+    <a href="./" title="Getting Data With API" class="md-nav__link md-nav__link--active">
       Getting Data With API
     </a>
+    
   </li>
 
         
@@ -356,12 +365,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Develop Your Own Image
@@ -379,7 +386,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../custom/" title="Image Dev Tools" class="md-nav__link">
+    <a href="../../synergy/custom/" title="Image Dev Tools" class="md-nav__link">
       Image Dev Tools
     </a>
   </li>
@@ -391,7 +398,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../blinky/" title="Creating a new Blinky image" class="md-nav__link">
+    <a href="../../synergy/blinky/" title="Creating a new Blinky image" class="md-nav__link">
       Creating a new Blinky image
     </a>
   </li>
@@ -401,57 +408,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Modding Blinky
-      </label>
-    
-    <a href="./" title="Modding Blinky" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../synergy/blinkymods/" title="Modding Blinky" class="md-nav__link">
       Modding Blinky
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modify-blink-rate" title="Modify Blink Rate" class="md-nav__link">
-    Modify Blink Rate
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modifying-which-led-blinks" title="Modifying Which LED Blinks" class="md-nav__link">
-    Modifying Which LED Blinks
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alternating-blink-between-two-leds" title="Alternating Blink between two LEDs" class="md-nav__link">
-    Alternating Blink between two LEDs
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -523,34 +484,6 @@
   
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modify-blink-rate" title="Modify Blink Rate" class="md-nav__link">
-    Modify Blink Rate
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modifying-which-led-blinks" title="Modifying Which LED Blinks" class="md-nav__link">
-    Modifying Which LED Blinks
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alternating-blink-between-two-leds" title="Alternating Blink between two LEDs" class="md-nav__link">
-    Alternating Blink between two LEDs
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -561,79 +494,18 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/codetricity/s5d9-hacking/edit/master/docs/synergy\blinkymods.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/codetricity/s5d9-hacking/edit/master/docs/monitoring\dweet.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>Modding Blinky</h1>
+                  <h1>Getting Data With API</h1>
                 
-                <p>This will guide you through simple modifications of the blinky template application
-to get more familiar with editing C code with e2 Studio and transferring the binary
-to your board.</p>
-<h2 id="modify-blink-rate">Modify Blink Rate</h2>
-<p>In <code>hal_entry.c</code> change the <code>bsp_delay_units_t</code> to your favorite millisecond delay. I'm using 500ms delay.</p>
-<p><img alt="" src="../img/blinky-mods/rate.png" /></p>
-<p>Look for <code>bsp_delay_units</code>. </p>
-<p><img alt="" src="../img/blinky-mods/500ms.png" /></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_fXya_Rx5Lg" frameborder="0" allowfullscreen></iframe>
-
-<h2 id="modifying-which-led-blinks">Modifying Which LED Blinks</h2>
-<p>in <code>hal_entry.c</code> comment out the <code>for</code> loop that displays all LEDs and select the LEDs you want to blink with one or more of these array elements:</p>
-<ul>
-<li><code>leds.p_leds[0]</code></li>
-<li><code>leds.p_leds[1]</code></li>
-<li>'leds.p_leds[2]`</li>
-</ul>
-<p><img alt="" src="../img/blinky-mods/whichled.png" /></p>
-<p>I'm going to flash only the green LED, <code>leds.p_leds[0]</code></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8H9B5rBN7po" frameborder="0" allowfullscreen></iframe>
-
-<h2 id="alternating-blink-between-two-leds">Alternating Blink between two LEDs</h2>
-<p>In order to alternate LEDs, you need to flip the state of at least LED. If the LED is <em>on</em> then turn it off.
-If you use one statement to flip all the LEDs to on, then all LEDs will go on, regardless of the
-initial state. In this example, the level is a boolean variable. </p>
-<p>I'm using the template conditional to flip the third LED and have a different conditional to
-change the state of the first LED. </p>
-<p>This is just to show you the old code and the new code in the same snippet. </p>
-<p>All LEDs are off when the board boots. If I set the first LED to true, then led[0] and led[2] will alternate.</p>
-<pre><code> bool level_0 = true;
-
-    while(1)
-    {
-
-
-        /* Determine the next state of the LEDs */
-        if(IOPORT_LEVEL_LOW == level)
-        {
-            level = IOPORT_LEVEL_HIGH;
-        }
-        else
-        {
-            level = IOPORT_LEVEL_LOW;
-        }
-
-        /* Update all board LEDs */
-//        for(uint32_t i = 0; i &lt; leds.led_count; i++)
-//        {
-//            g_ioport.p_api-&gt;pinWrite(leds.p_leds[i], level);
-//        }
-
-        g_ioport.p_api-&gt;pinWrite(leds.p_leds[2], level);
-        g_ioport.p_api-&gt;pinWrite(leds.p_leds[0], level_0);
-
-        if(level_0)
-        {
-            level_0 = false;
-        }
-        else
-        {
-            level_0 = true;
-        }
-
-        /* Delay */
-        R_BSP_SoftwareDelay(delay, bsp_delay_units);
-    }
+                <p>With your S5D9 plugged into both USB and Ethernet, modify this URL and put it into a browser.</p>
+<pre><code>https://renesas.dweet.io/get/dweets/for/S5D9-f878
 </code></pre>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bLeTWXHZIlk" frameborder="0" allowfullscreen></iframe>
+<p><img alt="" src="../img/dweet/all-data.png" /></p>
+<p>You can also use the IoT Sandbox API console.</p>
+<p><a href="http://renesas.dweet.io/play/">http://renesas.dweet.io/play/</a></p>
+<p><img alt="" src="../img/dweet/api-console.png" /></p>
                 
                   
                 
@@ -652,7 +524,7 @@ change the state of the first LED. </p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../blinky/" title="Creating a new Blinky image" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../starting/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -661,19 +533,19 @@ change the state of the first LED. </p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Creating a new Blinky image
+                Getting Started
               </span>
             </div>
           </a>
         
         
-          <a href="../../design/files/" title="Download design files" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../intelligence/overview/" title="Overview and Installation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Download design files
+                Overview and Installation
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
