@@ -1,6 +1,16 @@
 
 ## Data Monitoring powered by BugLabs
 
+## Learning Objectives
+
+* Connect S5D9 to Renesas Data Monitoring Dashboard (Freeboard)
+* View sensor data in pre-made dashboard
+* Create custom dashboard using your S5D9 as the data source
+* Add third-party APIs to your dashboard. You'll use a public weather API
+* Understand geotagging and map display by using a pre-built demo
+
+> NOTE: Another guide will show you how to use a simple REST API to access the S5D9 sensor data in JSON format.
+
 ## Connect Board to USB and Ethernet
 
 * Take the board out of the box and connect the USB port on the board to a USB port on your laptop.  This will power up the board and the board will enumerate as a USB drive on your laptop.  
