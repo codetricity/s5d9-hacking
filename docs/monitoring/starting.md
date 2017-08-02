@@ -31,9 +31,9 @@ If you don't have the sticker on the back with the Thing Name already there for 
 
 * Click on the USB drive which represents your board.  
 
-![](img/thingname.png)
-
 * Find the “ThingName.txt” file and open it.  The file will contain the Thing Name for your board. 
+
+![](img/thingname.png)
 
 ![](img/layout.png)
 
