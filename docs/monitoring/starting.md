@@ -33,6 +33,8 @@ If you're in the Learn IoT workshop, your board already has the Thing Name on a 
 
 The syntax is case sensitive and will be S5D9-xxxx (a combination of four numbers and letters).
 
+![](img/me.png)
+
 Terminology: The Renesas Data Monitoring Dashboard is also referred to as *Freeboard*
 
 * Click on the USB drive which represents your board.  
