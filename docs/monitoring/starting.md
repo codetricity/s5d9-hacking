@@ -27,13 +27,13 @@ If you're in the Learn IoT workshop, your board already has the Thing Name on a 
 
 The syntax is case sensitive and will be S5D9-xxxx ("S5D9 on the left, a dash, and then a combination of four numbers and letters on the right).
 
+If you don't have the sticker on the back with the Thing Name already there for you, you will need to get it yourself.
+
 * Click on the USB drive which represents your board.  
 
 ![](img/thingname.png)
 
 * Find the “ThingName.txt” file and open it.  The file will contain the Thing Name for your board. 
-
-* Now connect the Ethernet port on the board to an Ethernet port on a network router which is internet enabled. 
 
 ![](img/layout.png)
 
@@ -41,7 +41,9 @@ The syntax is case sensitive and will be S5D9-xxxx ("S5D9 on the left, a dash, a
 
 ## Access S5D9 Sensor Data on Renesas Data Monitoring Dashboard 
 
-* Now open a web browser and go to [www.renesas.com/iotsandbox/S5D9/getstarted](www.renesas.com/iotsandbox/S5D9/getstarted). 
+* First connect the Ethernet port on the board to an Ethernet port on a network router which is internet enabled. 
+
+* Tehn open a web browser and go to [www.renesas.com/iotsandbox/S5D9/getstarted](www.renesas.com/iotsandbox/S5D9/getstarted). 
 
 * Enter your board’s Thing Name into the field marked “Enter Thing Name here…” and press the “Try it now!” button. 
 
