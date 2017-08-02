@@ -58,7 +58,7 @@ This is the response:
 
 ### Posting Data
 
-With the Ethernet unplugged to provide the board from sending sensor data.
+With the Ethernet unplugged to prevent the board from sending sensor data.
 
 ![](img/dweet/create-dweet.png)
 
