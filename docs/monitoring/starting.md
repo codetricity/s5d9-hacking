@@ -15,7 +15,7 @@
 
 * Take the board out of the box and connect the USB port on the board to a USB port on your laptop.  This will power up the board and the board will enumerate as a USB drive on your laptop.  
 
-> NOTE: The board will not show up as a USB drive on Macs. You only need to complete Step 2 to get one file off the board with the device name. After that, the USB is only for power. Once you get the name from "ThingName.txt" file, you can use a 
+> PLEASE NOTE: The board will not show up as a USB drive on Macs. You only need to complete Step 2 to get one file off the board with the device name. After that, the USB is only for power. Once you get the name from "ThingName.txt" file, you can use a 
 Mac to view the dashboard.
 
 * Now connect the Ethernet port on the board to an Ethernet port on a network router which is internet enabled. 
