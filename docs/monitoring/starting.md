@@ -100,6 +100,34 @@ Add a pane.
 
 ![](img/freeboard/add-pane.png)
 
+Add widget.
+
+![](img/freeboard/add-widget.png)
+
+Select gauge.
+
+![](img/freeboard/gauge-widget.png)
+
+Fill in details.
+
+![](img/freeboard/source-details.png)
+
+Create gauges for Y and Z acceleration.
+
+![](img/freeboard/accel-pane.png)
+
+Add sound sparkline and clap next to board.
+
+![](img/freeboard/sparkline-sound.png)
+
+![](img/freeboard/sound-graph.png)
+
+Add temperature and any other sensors.
+
+![](img/freeboard/temperature.png)
+
+![](img/freeboard/dash2.png)
+
 ### Add a 3rd party API as Data Source
 
 To add another datasource, such as a 3rd party API, Click on the ADD button.
@@ -128,13 +156,20 @@ Click on the + sign in the header of your new pane.  A selection popup will appe
 
 Select the widget type you wish to use (in our case we use the gauge).
 
-![](img/widget2.png)
+![](img/freeboard/palo-alto-current.png)
 
 Fill out the information in the widget setup screen, then click SAVE.
 
 ![](img/widget3.png)
 
+![](img/freeboard/dash3.png)
+
 Next step, keep adding more datasources and widgets, then Share your dashboard.
+
+![](img/freeboard/share-button.png)
+
+
+![](img/freeboard/share-url.png)
 
 One last note: Bug Labs provides a set of off-the-shelf widgets to use, however, the user is able to add new widgets and datasource types by adding plugins to the Developer Console.
 
