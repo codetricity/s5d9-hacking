@@ -35,7 +35,9 @@ If you don't have the sticker on the back with the Thing Name already there for 
 
 ![](img/thingname.png)
 
-![](img/layout.png)
+## S5D9 IoT Fast Prototyping Kit / Module Board Layout
+
+![](img/S5D9schematic.jpg)
 
 ![](img/usb-ethernet.jpg)
 
