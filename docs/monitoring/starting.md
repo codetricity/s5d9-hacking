@@ -27,8 +27,6 @@ If you're in the Learn IoT workshop, your board already has the Thing Name on a 
 
 The syntax is case sensitive and will be S5D9-xxxx ("S5D9 on the left, a dash, and then a combination of four numbers and letters on the right).
 
-Terminology: The Renesas Data Monitoring Dashboard is also referred to as *Freeboard*
-
 * Click on the USB drive which represents your board.  
 
 ![](img/thingname.png)
@@ -54,6 +52,8 @@ At this point, after just a few seconds, you should see sensor data from your bo
 > NOTE: if you don't see any sensor data after 3 minutes, unset and then set your Board ID again.
 
 ![](img/unset.png)
+
+Terminology: The Renesas Data Monitoring Dashboard is also referred to as *Freeboard*
 
 You can shake the board to watch the accelerometer readings change or snap your fingers and watch the sound level change.  You can also click on the button in the browser marked “RED LED” and watch it turn on the LED on your board.  
 
