@@ -13,7 +13,7 @@
 
 ## Connect Board to USB and Ethernet
 
-* Take the board out of the box and connect the USB port on the board to a USB port on your laptop.  This will power up the board and the board will enumerate as a USB drive on your laptop.  
+* Take the board out of the box and connect the USB port on the board to a USB port on your laptop.  This will power up the board and the board will show up as a USB drive on your laptop.  
 
 > PLEASE NOTE: The board will not show up as a USB drive on Macs. You only need to complete Step 2 to get one file off the board with the device name. After that, the USB is only for power. Once you get the name from "ThingName.txt" file, you can use a 
 Mac to view the dashboard.
@@ -25,7 +25,13 @@ Mac to view the dashboard.
 ![](img/usb-ethernet.jpg)
 
 
-## Access S5D9 Sensor Data on Renesas Data Monitoring Dashboard 
+## Get Your Thing Name
+
+If you're in the Learn IoT workshop, your board already has the Thing Name on a sticker on the back side.
+
+![](img/thingname_nametag.jpg)
+
+The syntax is case sensitive and will be S5D9-xxxx (a combination of four numbers and letters).
 
 Terminology: The Renesas Data Monitoring Dashboard is also referred to as *Freeboard*
 
@@ -33,7 +39,10 @@ Terminology: The Renesas Data Monitoring Dashboard is also referred to as *Freeb
 
 ![](img/thingname.png)
 
-* Find the “ThingName.txt” file and open it.  The file will contain the Thing Name for your board.  
+* Find the “ThingName.txt” file and open it.  The file will contain the Thing Name for your board. 
+
+## Access S5D9 Sensor Data on Renesas Data Monitoring Dashboard 
+
 * Now open a web browser and go to www.renesas.com/iotsandbox/S5D9/getstarted.  
 * Enter your board’s Thing Name into the field marked “Enter Thing Name here…” and press the “Try it now!” button. 
 
