@@ -142,40 +142,48 @@ Fill out the appropriate details, and click on SAVE.
 
 ![](img/weather2.png)
 
-### Widgets
+### Add New Pane and Widget to Pane
 
-The freeboard platform comes with a standard set of widgets to use for visualizing data.  To add a new widget to your dashboard, click on the Add Pane button:
+Add Pane.
 
 ![](img/pane.png)
+ 
 
-A new pane will be added to the top left of your dashboard. 
-
-Click on the + sign in the header of your new pane.  A selection popup will appear:
+Click on the + sign in the header of the new pane.  A selection popup will appear:
 
 ![](img/widget.png)
 
 Select the widget type you wish to use (in our case we use the gauge).
+Fill out the information in the widget setup screen, then click SAVE.
 
 ![](img/freeboard/palo-alto-current.png)
 
-Fill out the information in the widget setup screen, then click SAVE.
+After you hit SAVE, the gauge will appear in your dashboard.
 
 ![](img/widget3.png)
 
+Here's the full dashboard. If you see the configuration panel, then click on the
+wrench in the middle top of the screen to hide it.
+
 ![](img/freeboard/dash3.png)
 
-Next step, keep adding more datasources and widgets, then Share your dashboard.
+Add more datasources and widgets, then Share your dashboard.
 
 ![](img/freeboard/share-button.png)
 
 
 ![](img/freeboard/share-url.png)
 
-One last note: Bug Labs provides a set of off-the-shelf widgets to use, however, the user is able to add new widgets and datasource types by adding plugins to the Developer Console.
+### Developer Console to Add New Widgets and Data Sources
+
+You can also add new widgets and datasource types by adding plugins to the Developer Console.
 
 ![](img/console.png)
 
-Documentation for creating new plugins can be found within the Developer Console.
+[Documentation for creating new plugins](http://freeboard.github.io/freeboard/docs/plugin_example.html) can be found within the Developer Console.
+
+![](img/freeboard/dev-console.png)
+
 
 ## Location Simulation
 Go to this link and enter your thing name in the box on the upper left corner.
