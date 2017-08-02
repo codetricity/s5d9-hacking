@@ -14,6 +14,7 @@ pages:
     - 'Requirements': 'requirements.md'
 - Data Monitoring:
     - 'Getting Started': 'monitoring/starting.md'
+    - 'Getting Data With API': 'monitoring/dweet.md' 
 - Data Intelligence:
     - 'Overview and Installation': 'intelligence/overview.md'
     - 'Diagnostics Intelligence Tutorial': 'intelligence/diagnostics.md'
