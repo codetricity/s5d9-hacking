@@ -15,15 +15,9 @@
 
 * Take the board out of the box and connect the USB port on the board to a USB port on your laptop.  This will power up the board and the board will show up as a USB drive on your laptop.  
 
-> PLEASE NOTE: The board will not show up as a USB drive on Macs. You only need to complete Step 2 to get one file off the board with the device name. After that, the USB is only for power. Once you get the name from "ThingName.txt" file, you can use a 
-Mac to view the dashboard.
+> NOTE: The board will not show up as a USB drive on Macs. 
 
-* Now connect the Ethernet port on the board to an Ethernet port on a network router which is internet enabled. 
-
-![](img/layout.png)
-
-![](img/usb-ethernet.jpg)
-
+You only need to get one file off the board, the "ThingName.txt" file. After that, the USB is needed, but only for power. 
 
 ## Get Your Thing Name
 
@@ -31,28 +25,39 @@ If you're in the Learn IoT workshop, your board already has the Thing Name on a 
 
 ![](img/thingname_nametag.jpg)
 
-The syntax is case sensitive and will be S5D9-xxxx (a combination of four numbers and letters).
+The syntax is case sensitive and will be S5D9-xxxx ("S5D9 on the left, a dash, and then a combination of four numbers and letters on the right).
 
-Terminology: The Renesas Data Monitoring Dashboard is also referred to as *Freeboard*
+If you don't have the sticker on the back with the Thing Name already there for you, you will need to get it yourself.
 
 * Click on the USB drive which represents your board.  
 
+* Find the “ThingName.txt” file and open it.  The file will contain the Thing Name for your board. 
+
 ![](img/thingname.png)
 
-* Find the “ThingName.txt” file and open it.  The file will contain the Thing Name for your board. 
+## S5D9 IoT Fast Prototyping Kit / Module Board Layout
+
+![](img/S5D9schematic.jpg)
+
+![](img/usb-ethernet.jpg)
 
 ## Access S5D9 Sensor Data on Renesas Data Monitoring Dashboard 
 
-* Now open a web browser and go to www.renesas.com/iotsandbox/S5D9/getstarted.  
+* First connect the Ethernet port on the board to an Ethernet port on a network router which is internet enabled. 
+
+* Then open a web browser and go to: [www.renesas.com/iotsandbox/S5D9/getstarted](www.renesas.com/iotsandbox/S5D9/getstarted) 
+
 * Enter your board’s Thing Name into the field marked “Enter Thing Name here…” and press the “Try it now!” button. 
 
 ![](img/thing-box.png)
 
-At this point, you should see sensor data from your board streaming to the dashboard at an update rate of approximately once per second.
+At this point, after just a few seconds, you should see sensor data from your board streaming to the dashboard at an update rate of approximately once per second.
 
 > NOTE: if you don't see any sensor data after 3 minutes, unset and then set your Board ID again.
 
 ![](img/unset.png)
+
+Terminology: The Renesas Data Monitoring Dashboard is also referred to as *Freeboard*
 
 You can shake the board to watch the accelerometer readings change or snap your fingers and watch the sound level change.  You can also click on the button in the browser marked “RED LED” and watch it turn on the LED on your board.  
 
