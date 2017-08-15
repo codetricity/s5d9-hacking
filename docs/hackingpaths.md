@@ -5,6 +5,6 @@ you follow the sequence below in the order presented. Go to the free site
 1. [Data Monitoring](monitoring/starting.md) (Bug Labs default system image)
 2. [Data Intelligence](intelligence/overview.md) (Medium One binaries and cloud-based workflows)
 3. Build your custom image (Professional C/C++ development system)
-    * Custom image that uses bootloader (`Put binary here` folder)
+    * [Custom image that uses bootloader](synergy/diagnostics.md) (`Put binary here` folder)
     * [Custom image that replaces bootloader](synergy/custom.md)
 4. [Designing your own board](design/files.md)

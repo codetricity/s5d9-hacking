@@ -23,6 +23,8 @@ pages:
     - 'Image Dev Tools': 'synergy/custom.md'
     - 'Creating a new Blinky image': 'synergy/blinky.md'
     - 'Modding Blinky': synergy/blinkymods.md
+- Custom Image for Factory Bootloader:
+    - 'Build Diagnostics Intelligence from Source': 'synergy/diagnostics.md'
 - Design Your Own Board:
     - 'Download design files': 'design/files.md'
     - 'Manufacturing and assembly': 'design/manufacturing.md'
