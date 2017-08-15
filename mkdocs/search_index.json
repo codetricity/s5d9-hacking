@@ -17,7 +17,7 @@
         },
         {
             "location": "/hackingpaths/",
-            "text": "With so many options, getting started hacking the board can be bewildering. I recommend\nyou follow the sequence below in the order presented. Go to the free site\n\nIoTcommunity.io\n for tutorials that will get you started.\n\n\n\n\nData Monitoring\n (Bug Labs default system image)\n\n\nData Intelligence\n (Medium One binaries and cloud-based workflows)\n\n\nBuild your custom image (Professional C/C++ development system)\n\n\nCustom image that uses bootloader (\nPut binary here\n folder)\n\n\nCustom image that replaces bootloader\n\n\n\n\n\n\nDesigning your own board",
+            "text": "With so many options, getting started hacking the board can be bewildering. I recommend\nyou follow the sequence below in the order presented. Go to the free site\n\nIoTcommunity.io\n for tutorials that will get you started.\n\n\n\n\nData Monitoring\n (Bug Labs default system image)\n\n\nData Intelligence\n (Medium One binaries and cloud-based workflows)\n\n\nBuild your custom image (Professional C/C++ development system)\n\n\nCustom image that uses bootloader\n (\nPut binary here\n folder)\n\n\nCustom image that replaces bootloader\n\n\n\n\n\n\nDesigning your own board",
             "title": "Hacking Paths"
         },
         {
@@ -309,6 +309,46 @@
             "location": "/synergy/blinkymods/#alternating-blink-between-two-leds",
             "text": "In order to alternate LEDs, you need to flip the state of at least LED. If the LED is  on  then turn it off.\nIf you use one statement to flip all the LEDs to on, then all LEDs will go on, regardless of the\ninitial state. In this example, the level is a boolean variable.   I'm using the template conditional to flip the third LED and have a different conditional to\nchange the state of the first LED.   This is just to show you the old code and the new code in the same snippet.   All LEDs are off when the board boots. If I set the first LED to true, then led[0] and led[2] will alternate.   bool level_0 = true;\n\n    while(1)\n    {\n\n\n        /* Determine the next state of the LEDs */\n        if(IOPORT_LEVEL_LOW == level)\n        {\n            level = IOPORT_LEVEL_HIGH;\n        }\n        else\n        {\n            level = IOPORT_LEVEL_LOW;\n        }\n\n        /* Update all board LEDs */\n//        for(uint32_t i = 0; i < leds.led_count; i++)\n//        {\n//            g_ioport.p_api->pinWrite(leds.p_leds[i], level);\n//        }\n\n        g_ioport.p_api->pinWrite(leds.p_leds[2], level);\n        g_ioport.p_api->pinWrite(leds.p_leds[0], level_0);\n\n        if(level_0)\n        {\n            level_0 = false;\n        }\n        else\n        {\n            level_0 = true;\n        }\n\n        /* Delay */\n        R_BSP_SoftwareDelay(delay, bsp_delay_units);\n    }",
             "title": "Alternating Blink between two LEDs"
+        },
+        {
+            "location": "/synergy/diagnostics/",
+            "text": "Medium One has the source code for their Diagnostics Intelligence project and and the Board Support Package file in their \nGitHub repository\n. This source code is for building a \n.srec\n that uses the factory bootloader on the board. The \nPut binary here\n folder.\n\n\nHow to Build Medium One Diagnostics Intelligence\n\n\nUpdating Components\n\n\nThe code requires SSP v1.2.1 (\ndownload\n). I'm updating my SSP from v1.2.0 to v1.2.1\n\n\n\n\nThe SSP v1.2.1 requires e2 studio 5.4.0.018 or later. I'm also upgrading e2 Studio (\ndownload\n).\n\n\nI next downloaded the Medium One Cloud Agent for Synergy SSP 1.2.x installed. (\ndownload\n)\n\n\n\n\nDownload Code From GitHub\n\n\nI'm  using git from the command line using git bash on Windows 10. You can also download the zipped project from GitHub and extract the contents.\n\n\n\n\nExtract Medium One Cloud Agent\n\n\n\n\nI extracted the Medium_One_Cloud_Agent_and_Demo into the \nm1\n folder. I'm leaving the m1-20161103 file zipped.\n\n\nMove IOT Board Pack into e2 Studio\n\n\nAssuming you installed e2 Studio into the default location, look for \n\n\nC:\\Renesas\\e2_studio\\internal\\projectgen\\arm\\Packs\n\n\n\n\n\nImport Project Into e2 Studio\n\n\nAfter you start e2 Studio, go to File -> Import\n\n\n\n\nSelect \nGeneral\n\n\n\n\nSelect \nRename & Import Existing C/C++ Project into Workspace\n\n\n\n\nSelect root directory. Browse to the folder that contains the diagnostics intelligence project you downloaded from GitHub.\n\n\n\n\nClick Finish.\n\n\n\n\nYou will see a popup in the lower right corner indicating \nSynergy License Required\n.\n\n\n\n\nSet up the license. \n\n\nBrowse for the License file.\n\n\n\n\nPress \nBrowse\n again.\n\n\n\n\nSelect SSP_License_Example_EvalLicense_....\n\n\n\n\nClick \nOK\n.\n\n\n\n\nClose the Welcome Panel.\n\n\n\n\nCreate a Synergy Configuration perspective. \n\n\n\n\nIn the Synergy Configuration perspective, click on \nconfiguration.xml\n, which is in the left panel.\n\n\nOnce it's open, click on \nGenerate Project Content\n\n\n\n\nthis is the BSP panel\n\n\n\n\nBuild it.\n\n\n\n\nWhen the build is finished, you will get a status message that the build finished with 0 errors and 0 warnings.  During the build, you will see the status window below.\n\n\n\n\nTransfer Compiled .srec\n\n\nThe compiled \n.srec\n file is in your Debug folder. Use Windows File browser to copy this into the \nPut binary here\n folder of your S5D9.\n\n\n\n\nThese are the files in your development folder on Windows.\n\n\n\n\nThe file is probably in e2_studio -> workspace\n\n\n\n\nThis is the file structure of your S5D9\n\n\n\n\nYou need to delete \nloaded.txt\n and put the name of the binary in a new text file called \nupdate.txt\n. See \n\nthis guide\n for more information.",
+            "title": "Build Diagnostics Intelligence from Source"
+        },
+        {
+            "location": "/synergy/diagnostics/#how-to-build-medium-one-diagnostics-intelligence",
+            "text": "",
+            "title": "How to Build Medium One Diagnostics Intelligence"
+        },
+        {
+            "location": "/synergy/diagnostics/#updating-components",
+            "text": "The code requires SSP v1.2.1 ( download ). I'm updating my SSP from v1.2.0 to v1.2.1   The SSP v1.2.1 requires e2 studio 5.4.0.018 or later. I'm also upgrading e2 Studio ( download ).  I next downloaded the Medium One Cloud Agent for Synergy SSP 1.2.x installed. ( download )",
+            "title": "Updating Components"
+        },
+        {
+            "location": "/synergy/diagnostics/#download-code-from-github",
+            "text": "I'm  using git from the command line using git bash on Windows 10. You can also download the zipped project from GitHub and extract the contents.",
+            "title": "Download Code From GitHub"
+        },
+        {
+            "location": "/synergy/diagnostics/#extract-medium-one-cloud-agent",
+            "text": "I extracted the Medium_One_Cloud_Agent_and_Demo into the  m1  folder. I'm leaving the m1-20161103 file zipped.",
+            "title": "Extract Medium One Cloud Agent"
+        },
+        {
+            "location": "/synergy/diagnostics/#move-iot-board-pack-into-e2-studio",
+            "text": "Assuming you installed e2 Studio into the default location, look for   C:\\Renesas\\e2_studio\\internal\\projectgen\\arm\\Packs",
+            "title": "Move IOT Board Pack into e2 Studio"
+        },
+        {
+            "location": "/synergy/diagnostics/#import-project-into-e2-studio",
+            "text": "After you start e2 Studio, go to File -> Import   Select  General   Select  Rename & Import Existing C/C++ Project into Workspace   Select root directory. Browse to the folder that contains the diagnostics intelligence project you downloaded from GitHub.   Click Finish.   You will see a popup in the lower right corner indicating  Synergy License Required .   Set up the license.   Browse for the License file.   Press  Browse  again.   Select SSP_License_Example_EvalLicense_....   Click  OK .   Close the Welcome Panel.   Create a Synergy Configuration perspective.    In the Synergy Configuration perspective, click on  configuration.xml , which is in the left panel.  Once it's open, click on  Generate Project Content   this is the BSP panel   Build it.   When the build is finished, you will get a status message that the build finished with 0 errors and 0 warnings.  During the build, you will see the status window below.",
+            "title": "Import Project Into e2 Studio"
+        },
+        {
+            "location": "/synergy/diagnostics/#transfer-compiled-srec",
+            "text": "The compiled  .srec  file is in your Debug folder. Use Windows File browser to copy this into the  Put binary here  folder of your S5D9.   These are the files in your development folder on Windows.   The file is probably in e2_studio -> workspace   This is the file structure of your S5D9   You need to delete  loaded.txt  and put the name of the binary in a new text file called  update.txt . See  this guide  for more information.",
+            "title": "Transfer Compiled .srec"
         },
         {
             "location": "/design/files/",

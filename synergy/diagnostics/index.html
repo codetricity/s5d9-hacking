@@ -20,7 +20,7 @@
     
     
       
-        <title>Modding Blinky - S5D9 IoT Hacking</title>
+        <title>Build Diagnostics Intelligence from Source - S5D9 IoT Hacking</title>
       
     
     
@@ -79,11 +79,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Develop Your Own Image
+                  Custom Image for Factory Bootloader
                 </span>
               
             
-            Modding Blinky
+            Build Diagnostics Intelligence from Source
           
         </span>
       </div>
@@ -356,12 +356,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Develop Your Own Image
@@ -401,57 +399,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Modding Blinky
-      </label>
-    
-    <a href="./" title="Modding Blinky" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../blinkymods/" title="Modding Blinky" class="md-nav__link">
       Modding Blinky
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modify-blink-rate" title="Modify Blink Rate" class="md-nav__link">
-    Modify Blink Rate
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modifying-which-led-blinks" title="Modifying Which LED Blinks" class="md-nav__link">
-    Modifying Which LED Blinks
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alternating-blink-between-two-leds" title="Alternating Blink between two LEDs" class="md-nav__link">
-    Alternating Blink between two LEDs
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -464,10 +416,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       Custom Image for Factory Bootloader
@@ -483,11 +437,85 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../diagnostics/" title="Build Diagnostics Intelligence from Source" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Build Diagnostics Intelligence from Source
+      </label>
+    
+    <a href="./" title="Build Diagnostics Intelligence from Source" class="md-nav__link md-nav__link--active">
       Build Diagnostics Intelligence from Source
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-build-medium-one-diagnostics-intelligence" title="How to Build Medium One Diagnostics Intelligence" class="md-nav__link">
+    How to Build Medium One Diagnostics Intelligence
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-components" title="Updating Components" class="md-nav__link">
+    Updating Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-code-from-github" title="Download Code From GitHub" class="md-nav__link">
+    Download Code From GitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extract-medium-one-cloud-agent" title="Extract Medium One Cloud Agent" class="md-nav__link">
+    Extract Medium One Cloud Agent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-iot-board-pack-into-e2-studio" title="Move IOT Board Pack into e2 Studio" class="md-nav__link">
+    Move IOT Board Pack into e2 Studio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-project-into-e2-studio" title="Import Project Into e2 Studio" class="md-nav__link">
+    Import Project Into e2 Studio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transfer-compiled-srec" title="Transfer Compiled .srec" class="md-nav__link">
+    Transfer Compiled .srec
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -563,22 +591,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modify-blink-rate" title="Modify Blink Rate" class="md-nav__link">
-    Modify Blink Rate
+  <a href="#how-to-build-medium-one-diagnostics-intelligence" title="How to Build Medium One Diagnostics Intelligence" class="md-nav__link">
+    How to Build Medium One Diagnostics Intelligence
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modifying-which-led-blinks" title="Modifying Which LED Blinks" class="md-nav__link">
-    Modifying Which LED Blinks
+  <a href="#updating-components" title="Updating Components" class="md-nav__link">
+    Updating Components
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#alternating-blink-between-two-leds" title="Alternating Blink between two LEDs" class="md-nav__link">
-    Alternating Blink between two LEDs
+  <a href="#download-code-from-github" title="Download Code From GitHub" class="md-nav__link">
+    Download Code From GitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extract-medium-one-cloud-agent" title="Extract Medium One Cloud Agent" class="md-nav__link">
+    Extract Medium One Cloud Agent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-iot-board-pack-into-e2-studio" title="Move IOT Board Pack into e2 Studio" class="md-nav__link">
+    Move IOT Board Pack into e2 Studio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-project-into-e2-studio" title="Import Project Into e2 Studio" class="md-nav__link">
+    Import Project Into e2 Studio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transfer-compiled-srec" title="Transfer Compiled .srec" class="md-nav__link">
+    Transfer Compiled .srec
   </a>
   
 </li>
@@ -597,79 +653,76 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/codetricity/s5d9-hacking/edit/master/docs/synergy\blinkymods.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/codetricity/s5d9-hacking/edit/master/docs/synergy\diagnostics.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>Modding Blinky</h1>
+                  <h1>Build Diagnostics Intelligence from Source</h1>
                 
-                <p>This will guide you through simple modifications of the blinky template application
-to get more familiar with editing C code with e2 Studio and transferring the binary
-to your board.</p>
-<h2 id="modify-blink-rate">Modify Blink Rate</h2>
-<p>In <code>hal_entry.c</code> change the <code>bsp_delay_units_t</code> to your favorite millisecond delay. I'm using 500ms delay.</p>
-<p><img alt="" src="../img/blinky-mods/rate.png" /></p>
-<p>Look for <code>bsp_delay_units</code>. </p>
-<p><img alt="" src="../img/blinky-mods/500ms.png" /></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_fXya_Rx5Lg" frameborder="0" allowfullscreen></iframe>
-
-<h2 id="modifying-which-led-blinks">Modifying Which LED Blinks</h2>
-<p>in <code>hal_entry.c</code> comment out the <code>for</code> loop that displays all LEDs and select the LEDs you want to blink with one or more of these array elements:</p>
-<ul>
-<li><code>leds.p_leds[0]</code></li>
-<li><code>leds.p_leds[1]</code></li>
-<li>'leds.p_leds[2]`</li>
-</ul>
-<p><img alt="" src="../img/blinky-mods/whichled.png" /></p>
-<p>I'm going to flash only the green LED, <code>leds.p_leds[0]</code></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8H9B5rBN7po" frameborder="0" allowfullscreen></iframe>
-
-<h2 id="alternating-blink-between-two-leds">Alternating Blink between two LEDs</h2>
-<p>In order to alternate LEDs, you need to flip the state of at least LED. If the LED is <em>on</em> then turn it off.
-If you use one statement to flip all the LEDs to on, then all LEDs will go on, regardless of the
-initial state. In this example, the level is a boolean variable. </p>
-<p>I'm using the template conditional to flip the third LED and have a different conditional to
-change the state of the first LED. </p>
-<p>This is just to show you the old code and the new code in the same snippet. </p>
-<p>All LEDs are off when the board boots. If I set the first LED to true, then led[0] and led[2] will alternate.</p>
-<pre><code> bool level_0 = true;
-
-    while(1)
-    {
-
-
-        /* Determine the next state of the LEDs */
-        if(IOPORT_LEVEL_LOW == level)
-        {
-            level = IOPORT_LEVEL_HIGH;
-        }
-        else
-        {
-            level = IOPORT_LEVEL_LOW;
-        }
-
-        /* Update all board LEDs */
-//        for(uint32_t i = 0; i &lt; leds.led_count; i++)
-//        {
-//            g_ioport.p_api-&gt;pinWrite(leds.p_leds[i], level);
-//        }
-
-        g_ioport.p_api-&gt;pinWrite(leds.p_leds[2], level);
-        g_ioport.p_api-&gt;pinWrite(leds.p_leds[0], level_0);
-
-        if(level_0)
-        {
-            level_0 = false;
-        }
-        else
-        {
-            level_0 = true;
-        }
-
-        /* Delay */
-        R_BSP_SoftwareDelay(delay, bsp_delay_units);
-    }
+                <p>Medium One has the source code for their Diagnostics Intelligence project and and the Board Support Package file in their <a href="https://github.com/Medium-One/diagnostics-intelligence-s5d9">GitHub repository</a>. This source code is for building a <code>.srec</code> that uses the factory bootloader on the board. The <code>Put binary here</code> folder.</p>
+<h2 id="how-to-build-medium-one-diagnostics-intelligence">How to Build Medium One Diagnostics Intelligence</h2>
+<h2 id="updating-components">Updating Components</h2>
+<p>The code requires SSP v1.2.1 (<a href="https://synergygallery.renesas.com/ssp/package#read">download</a>). I'm updating my SSP from v1.2.0 to v1.2.1</p>
+<p><a href="https://synergygallery.renesas.com/ssp/package#read"><img alt="" src="../img/diagnostics-intelligence/ssp.png" /></a></p>
+<p>The SSP v1.2.1 requires e2 studio 5.4.0.018 or later. I'm also upgrading e2 Studio (<a href="https://synergygallery.renesas.com/isde">download</a>).</p>
+<p>I next downloaded the Medium One Cloud Agent for Synergy SSP 1.2.x installed. (<a href="https://synergygallery.renesas.com/addon">download</a>)</p>
+<p><img alt="" src="../img/diagnostics-intelligence/m1cloud.png" /></p>
+<h2 id="download-code-from-github">Download Code From GitHub</h2>
+<p>I'm  using git from the command line using git bash on Windows 10. You can also download the zipped project from GitHub and extract the contents.</p>
+<p><img alt="" src="../img/diagnostics-intelligence/gh.png" /></p>
+<h2 id="extract-medium-one-cloud-agent">Extract Medium One Cloud Agent</h2>
+<p><img alt="" src="../img/diagnostics-intelligence/extractCloud.png" /></p>
+<p>I extracted the Medium_One_Cloud_Agent_and_Demo into the <code>m1</code> folder. I'm leaving the m1-20161103 file zipped.</p>
+<h2 id="move-iot-board-pack-into-e2-studio">Move IOT Board Pack into e2 Studio</h2>
+<p>Assuming you installed e2 Studio into the default location, look for </p>
+<pre><code>C:\Renesas\e2_studio\internal\projectgen\arm\Packs
 </code></pre>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bLeTWXHZIlk" frameborder="0" allowfullscreen></iframe>
+<p><img alt="" src="../img/diagnostics-intelligence/bsp.png" /></p>
+<h2 id="import-project-into-e2-studio">Import Project Into e2 Studio</h2>
+<p>After you start e2 Studio, go to File -&gt; Import</p>
+<p><img alt="" src="../img/diagnostics-intelligence/import.png" /></p>
+<p>Select <em>General</em></p>
+<p><img alt="" src="../img/diagnostics-intelligence/general.png" /></p>
+<p>Select <em>Rename &amp; Import Existing C/C++ Project into Workspace</em></p>
+<p><img alt="" src="../img/diagnostics-intelligence/existingProject.png" /></p>
+<p>Select root directory. Browse to the folder that contains the diagnostics intelligence project you downloaded from GitHub.</p>
+<p><img alt="" src="../img/diagnostics-intelligence/root.png" /></p>
+<p>Click Finish.</p>
+<p><img alt="" src="../img/diagnostics-intelligence/finish.png" /></p>
+<p>You will see a popup in the lower right corner indicating <em>Synergy License Required</em>.</p>
+<p><img alt="" src="../img/diagnostics-intelligence/licenseRequired.png" /></p>
+<p>Set up the license. </p>
+<p>Browse for the License file.</p>
+<p><img alt="" src="../img/diagnostics-intelligence/licenseBrowse.png" /></p>
+<p>Press <em>Browse</em> again.</p>
+<p><img alt="" src="../img/diagnostics-intelligence/licenseSpecify.png" /></p>
+<p>Select SSP_License_Example_EvalLicense_....</p>
+<p><img alt="" src="../img/diagnostics-intelligence/licenseEval.png" /></p>
+<p>Click <em>OK</em>.</p>
+<p><img alt="" src="../img/diagnostics-intelligence/licenseOk.png" /></p>
+<p>Close the Welcome Panel.</p>
+<p><img alt="" src="../img/diagnostics-intelligence/welcomeClose.png" /></p>
+<p>Create a Synergy Configuration perspective. </p>
+<p><img alt="" src="../img/diagnostics-intelligence/synergyConfig.png" /></p>
+<p>In the Synergy Configuration perspective, click on <code>configuration.xml</code>, which is in the left panel.</p>
+<p>Once it's open, click on <strong>Generate Project Content</strong></p>
+<p><img alt="" src="../img/diagnostics-intelligence/generateProject.png" /></p>
+<p>this is the BSP panel</p>
+<p><img alt="" src="../img/diagnostics-intelligence/bspPanel.png" /></p>
+<p>Build it.</p>
+<p><img alt="" src="../img/diagnostics-intelligence/build.png" /></p>
+<p>When the build is finished, you will get a status message that the build finished with 0 errors and 0 warnings.  During the build, you will see the status window below.</p>
+<p><img alt="" src="../img/diagnostics-intelligence/buildProgress.png" /></p>
+<h2 id="transfer-compiled-srec">Transfer Compiled .srec</h2>
+<p>The compiled <code>.srec</code> file is in your Debug folder. Use Windows File browser to copy this into the <code>Put binary here</code> folder of your S5D9.</p>
+<p><img alt="" src="../img/diagnostics-intelligence/srecLocation.png" /></p>
+<p>These are the files in your development folder on Windows.</p>
+<p><img alt="" src="../img/diagnostics-intelligence/srecWindows.png" /></p>
+<p>The file is probably in e2_studio -&gt; workspace</p>
+<p><img alt="" src="../img/diagnostics-intelligence/e2studioWorkspace.png" /></p>
+<p>This is the file structure of your S5D9</p>
+<p><img alt="" src="../img/diagnostics-intelligence/s5d9Binary.png" /></p>
+<p>You need to delete <code>loaded.txt</code> and put the name of the binary in a new text file called <code>update.txt</code>. See 
+<a href="http://learn.iotcommunity.io/t/renesas-s5d9-new-binary-install/969">this guide</a> for more information.</p>
                 
                   
                 
@@ -688,7 +741,7 @@ change the state of the first LED. </p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../blinky/" title="Creating a new Blinky image" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../blinkymods/" title="Modding Blinky" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -697,19 +750,19 @@ change the state of the first LED. </p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Creating a new Blinky image
+                Modding Blinky
               </span>
             </div>
           </a>
         
         
-          <a href="../diagnostics/" title="Build Diagnostics Intelligence from Source" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../design/files/" title="Download design files" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Build Diagnostics Intelligence from Source
+                Download design files
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
