@@ -56,7 +56,7 @@ Select root directory. Browse to the folder that contains the diagnostics intell
 
 Click Finish.
 
-![](img/diagnostics-intelligence/root.png)
+![](img/diagnostics-intelligence/finish.png)
 
 You will see a popup in the lower right corner indicating *Synergy License Required*.
 
@@ -70,58 +70,60 @@ Browse for the License file.
 
 Press *Browse* again.
 
-<img src="/uploads/default/original/2X/6/66964a25543db55b9c9a4efa664d95a653a4bf00.png" width="426" height="186">
+![](img/diagnostics-intelligence/licenseSpecify.png)
 
 Select SSP_License_Example_EvalLicense_....
 
-<img src="/uploads/default/original/2X/0/0cafd5e615262180f675cfe547eec2d45c93110b.png" width="690" height="431">
+![](img/diagnostics-intelligence/licenseEval.png)
 
 Click *OK*.
 
-<img src="/uploads/default/original/2X/7/780fad8a60b6593e38a97f6656dd295f46cdf837.png" width="658" height="500">
+![](img/diagnostics-intelligence/licenseOk.png)
 
 Close the Welcome Panel.
 
-<img src="/uploads/default/original/2X/d/dc0360d5ee467b5f10192cc6048b655cb66880ef.png" width="398" height="437">
+![](img/diagnostics-intelligence/welcomeClose.png)
 
 Create a Synergy Configuration perspective. 
 
-<img src="/uploads/default/original/2X/c/c99b1ec21ca6cd6828154910ce133aa10da5eba0.png" width="625" height="474">
+![](img/diagnostics-intelligence/synergyConfig.png)
 
 In the Synergy Configuration perspective, click on `configuration.xml`, which is in the left panel.
 
 Once it's open, click on **Generate Project Content**
 
-<img src="/uploads/default/original/2X/2/2d0ba37c75436b8856d8d48bfa5a9bbdeeea3795.png" width="690" height="472">
+![](img/diagnostics-intelligence/generateProject.png)
 
 this is the BSP panel
 
-<img src="/uploads/default/original/2X/9/986658e122aa9f2569dadc2aee9d61222fad84dd.png" width="690" height="493">
+![](img/diagnostics-intelligence/bspPanel.png)
 
 Build it.
 
-<img src="/uploads/default/original/2X/c/c531daed2f1626aa860b63817611e89e7e98f892.png" width="581" height="500">
+![](img/diagnostics-intelligence/build.png)
 
 When the build is finished, you will get a status message that the build finished with 0 errors and 0 warnings.  During the build, you will see the status window below.
 
-<img src="/uploads/default/original/2X/0/03aa16f78026c23e06b30a691c65f6a6463284ae.png" width="532" height="383">
+![](img/diagnostics-intelligence/buildProgress.png)
 
-## Get Compiled .srec
+## Transfer Compiled .srec
 
 The compiled `.srec` file is in your Debug folder. Use Windows File browser to copy this into the `Put binary here` folder of your S5D9.
 
-<img src="/uploads/default/original/2X/b/bdbbd7513febaafb935cb57b1479d47151aa5ec9.png" width="400" height="500">
+![](img/diagnostics-intelligence/srecLocation.png)
 
 These are the files in your development folder on Windows.
 
-<img src="/uploads/default/original/2X/7/721b371785957ad78e1ddc4c62e19f4263e679d6.png" width="643" height="301">
+![](img/diagnostics-intelligence/srecWindows.png)
 
 The file is probably in e2_studio -> workspace
-<img src="/uploads/default/original/2X/f/fefa2082fc6d4ef09aa043bcf3a809610fa28b54.png" width="678" height="37">
+
+![](img/diagnostics-intelligence/e2studioWorkspace.png)
+
 
 This is the file structure of your S5D9
-<img src="/uploads/default/original/2X/f/f7706c5ea7ee97e8d501752998b6d08f61d3500e.png" width="380" height="384">
 
-You need to delete `loaded.txt` and put the name of the binary in a new text file called `update.txt`. See this guide for more information.
+![](img/diagnostics-intelligence/s5d9Binary.png)
 
-http://learn.iotcommunity.io/t/renesas-s5d9-new-binary-install/969
+You need to delete `loaded.txt` and put the name of the binary in a new text file called `update.txt`. See 
+[this guide](http://learn.iotcommunity.io/t/renesas-s5d9-new-binary-install/969) for more information.
