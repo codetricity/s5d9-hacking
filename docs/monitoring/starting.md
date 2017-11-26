@@ -134,7 +134,7 @@ Select gauge.
 
 ![](img/freeboard/gauge-widget.png)
 
-Fill in details.
+Click on "+ datasource" and Fill in details.
 
 ![](img/freeboard/source-details.png)
 
